@@ -1,0 +1,463 @@
+{
+  "slug": "calendly",
+  "app": "Calendly",
+  "provider": "Calendly",
+  "website": "https://calendly.com",
+  "developer_portal": "https://developer.calendly.com",
+  "category": "Scheduling automation",
+  "origin": "live-agent",
+  "last_checked": "2026-11-14",
+  "one_liner": "Developers can launch Calendly OAuth apps instantly as no Calendly approval process is required, enabling same-day integration.",
+  "verdict": {
+    "tier": "instant",
+    "difficulty": 2,
+    "hands_on": "30-60 min",
+    "approval_wait": "None",
+    "total_to_production": "Same day",
+    "wait_basis": "community-reported",
+    "confidence": "high"
+  },
+  "start_today": {
+    "summary": "Developers can register an OAuth app and begin testing immediately with a free Calendly account, as no Calendly approval process is required for public distribution.",
+    "limits_before_approval": [
+      "Production Redirect URIs must use HTTPS; localhost HTTP/HTTPS is permitted for Sandbox environments.",
+      "Refresh tokens are single-use, with enforcement starting on August 31, 2026.",
+      "Free Calendly plans have a rate limit of 50 requests per user per minute, while paid plans are limited to 500 requests per user per minute.",
+      "Only 8 OAuth tokens per user can be requested within a 1-minute span."
+    ]
+  },
+  "composio": {
+    "managed_app": true,
+    "toolkit": "CALENDLY",
+    "note": "Composio offers a managed OAuth app for Calendly, allowing developers to launch immediately. A custom app is only needed for branding, extra scopes, dedicated rate limits, faster trigger polling, or self-hosted instances.",
+    "catalog_url": "https://docs.composio.dev/toolkits/managed-auth"
+  },
+  "prerequisites": [
+    {
+      "item": "Calendly user account",
+      "detail": "Required to access developer tools.",
+      "cost": "free",
+      "sources": [
+        "s1"
+      ]
+    },
+    {
+      "item": "Separate Calendly developer account",
+      "detail": "Used for creating and managing OAuth apps, can be signed up with GitHub or Google.",
+      "cost": "free",
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "item": "Industry-standard privacy policy",
+      "detail": "Required to be transparent about data collection, use, and sharing.",
+      "cost": "varies",
+      "sources": [
+        "s12"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "OAuth App Registration",
+      "duration": "15 min",
+      "steps": [
+        {
+          "text": "Navigate to 'Developer tools' within your Calendly account or directly at developer.calendly.com.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Register a new OAuth app, specifying Redirect URIs (HTTPS for Production, HTTP/HTTPS localhost for Sandbox).",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Note down the Client ID, Client Secret, and Webhook signing key, as the Client Secret and Webhook signing key are displayed only once.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Implement Authentication & API Calls",
+      "duration": "30 min",
+      "steps": [
+        {
+          "text": "Implement Proof Key for Code Exchange (PKCE) using the S256 method for all OAuth apps.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Request necessary authorization scopes to define permissions for API access.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s6"
+          ]
+        },
+        {
+          "text": "Develop and test your application in the Sandbox environment.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s13"
+          ],
+          "note": "Quoted text was not found on the cited page."
+        }
+      ]
+    },
+    {
+      "name": "Deployment Considerations",
+      "duration": "Ongoing",
+      "steps": [
+        {
+          "text": "Ensure your application adheres to Calendly's developer policy, including transparency about data usage and having a privacy policy.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s12"
+          ]
+        },
+        {
+          "text": "Be aware of single-use refresh tokens (enforced from August 31, 2026) and implement appropriate handling.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s2"
+          ]
+        },
+        {
+          "text": "Monitor API rate limits, which vary by Calendly plan (Free vs. Paid) and for OAuth token requests.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s9",
+            "s10"
+          ]
+        }
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "scope": "calendly.user:read",
+      "purpose": "Allows reading of user data.",
+      "review_impact": "none",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "scope": "calendly.events:read",
+      "purpose": "Allows reading of event data.",
+      "review_impact": "none",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "scope": "calendly.events:write",
+      "purpose": "Allows creation, modification, or deletion of event data.",
+      "review_impact": "none",
+      "sources": [
+        "s6"
+      ]
+    }
+  ],
+  "approval": {
+    "required": "no",
+    "trigger": "Calendly does not require an approval process for OAuth apps.",
+    "reviewers_check": [
+      "None documented by Calendly."
+    ],
+    "typical_wait": "None",
+    "common_rejections": [
+      "None documented by Calendly."
+    ],
+    "sources": [
+      "s2"
+    ]
+  },
+  "blockers": [
+    {
+      "blocker": "Microsoft admin approval may be required for Calendly to access Microsoft accounts if the user's organization has specific security policies.",
+      "fix": "This is a Microsoft-enforced requirement, not Calendly's; the user's organization must approve.",
+      "sources": [
+        "s5"
+      ]
+    },
+    {
+      "blocker": "The Calendly API v1 and its associated webhooks were retired on August 27, 2025.",
+      "fix": "Migrate to API v2, as v1 is no longer available.",
+      "sources": [
+        "s11"
+      ]
+    }
+  ],
+  "agent_split": {
+    "agent_can": [
+      "Draft the privacy policy content based on disclosed data usage.",
+      "Suggest minimal necessary scopes based on app functionality.",
+      "Check redirect URI settings for compliance (HTTPS for production, PKCE).",
+      "Run a test OAuth flow once credentials are provided."
+    ],
+    "you_must": [
+      "Log in to Calendly and create a developer account.",
+      "Register the OAuth app and obtain Client ID, Client Secret, and Webhook signing key.",
+      "Implement PKCE in your application.",
+      "Ensure your application's Redirect URIs are correctly configured.",
+      "Adhere to Calendly's developer policy and privacy requirements."
+    ],
+    "provider_controls": [
+      "Issuance of Client ID, Client Secret, and Webhook signing key.",
+      "API rate limits.",
+      "Enforcement of single-use refresh tokens."
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/docs/authentication/creating-an-oauth-app",
+      "kind": "official",
+      "quote": "Log in to Calendly, or sign up for a Calendly account. Open Developer tools . In Calendly, open the Profile menu and select Developer.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s2",
+      "title": "oauth-guide-composio.hrudvibandla.com",
+      "url": "https://oauth-guide-composio.hrudvibandla.com/guides/calendly",
+      "kind": "community",
+      "quote": "A Calendly developer account (separate from a Calendly user account), signed up with GitHub or Google. OAuth apps are created and managed there.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s3",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/docs/authentication/overview",
+      "kind": "official",
+      "quote": "There are two authentication types available based on how you plan to distribute your app: OAuth is required for multiple accounts, while personal access tokens are used for installing in a single account at a time.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s4",
+      "title": "veryfront.com",
+      "url": "https://veryfront.com/docs/cloud/integrations/calendly",
+      "kind": "community",
+      "quote": "A free Calendly account works for testing; event cancellation requires the connected user to own the event.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s5",
+      "title": "calendly.com",
+      "url": "https://calendly.com/help/approval-required-when-using-microsoft-with-calendly",
+      "kind": "official",
+      "quote": "If your organization has these policies in place, Microsoft displays the Approval required message before allowing Calendly to access your Microsoft account. Because this requirement is controlled by Microsoft, Calendly can't bypass it.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s6",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/api-docs/references/authorization-scopes",
+      "kind": "official",
+      "quote": "Authorization scopes define the permissions that an application requests when accessing Calendly APIs on behalf of a user. Scopes control which Calendly resources your integration can read or modify.",
+      "accessed": "2026-11-14",
+      "quote_check": "unreadable"
+    },
+    {
+      "id": "s7",
+      "title": "help.calendly.com",
+      "url": "https://help.calendly.com/hc/en-us/articles/1260802775600-Calendly-API-overview",
+      "kind": "official",
+      "quote": "User role: A token generated by a user only allows access to data linked to that specific user. [...] Admin/Owner role: Tokens generated by an admin or owner provide broader access. These tokens allow API calls to manage data across the entire organization or within groups.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s8",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/api-docs/changelog",
+      "kind": "official",
+      "quote": "November 3, 2026. Scheduling API and Webhooks on all Calendly plans.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s9",
+      "title": "trycaddi.com",
+      "url": "https://www.trycaddi.com/integrations/calendly/api",
+      "kind": "community",
+      "quote": "500 requests per user per minute on paid plans and 50 on Free, with tighter limits on Create Event Invitee (e.g., 10/min, 50/hour, 100/day per user on paid non-Enterprise plans).",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s10",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/api-docs/references/rate-limits",
+      "kind": "official",
+      "quote": "Only 8 OAuth tokens per user can be requested within a span of 1 minute.",
+      "accessed": "2026-11-14",
+      "quote_check": "unreadable"
+    },
+    {
+      "id": "s11",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/api-docs/guides/migrate-from-api-v1-to-v2",
+      "kind": "official",
+      "quote": "The v1 API and Webhooks have been retired as of 8/27/25 and are no longer available. If you're still on v1, use the steps below to migrate to v2.",
+      "accessed": "2026-11-14",
+      "quote_check": "unreadable"
+    },
+    {
+      "id": "s12",
+      "title": "developer.calendly.com",
+      "url": "https://developer.calendly.com/developer-policy",
+      "kind": "official",
+      "quote": "Use of customer data must be transparent by disclosing the collection, use and sharing of the data. You must limit your use of the data to the practices you disclose. All Developers must have an industry standard privacy policy in place that accurately describes the specifics of data usage and meets applicable legal and consent requirements.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s13",
+      "title": "composio.dev",
+      "url": "https://composio.dev/auth/calendly",
+      "kind": "composio",
+      "quote": "Environment type - Production or Sandbox. Separate apps will be needed for each environment.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    }
+  ],
+  "tested": [
+    {
+      "what": "Developer portal responds: GET https://developer.calendly.com",
+      "result": "HTTP 200 (redirected to https://developer.calendly.com/docs/getting-started/overview)",
+      "date": "2026-11-14"
+    },
+    {
+      "what": "OAuth documentation responds: GET https://developer.calendly.com/api-docs/references/authentication/oauth",
+      "result": "HTTP 404",
+      "date": "2026-11-14"
+    }
+  ],
+  "uncertain": [
+    "What is the access token lifetime and expiry for Calendly OAuth apps?",
+    "Are there any specific requirements for app logo, homepage, privacy policy, terms of service, or support email during OAuth app registration?",
+    "Are there any test-user caps, install/connection caps, or shorter token expiry in test mode for Calendly OAuth apps?",
+    "Are there any prerequisites like a company page, verified domain, or business verification that block app registration or usage?",
+    "Is there a separate marketplace or directory listing review process for Calendly apps, and what are its requirements?",
+    "Are there any implicit or unwritten review processes for apps that gain significant user traction or request a large number of sensitive scopes, even if not explicitly stated in the documentation?",
+    "Are there specific lower rate limits for new, unreviewed, or unlisted apps beyond the general Free/Paid plan limits?",
+    "Are there explicit data-use rules regarding using API data to train AI models, beyond general transparency and privacy policy requirements?",
+    "Are there any specific requirements (e.g., privacy policy, terms of service) that developers must adhere to for public distribution of their Calendly OAuth apps, even without a formal review process?",
+    "1 quoted passage(s) were not found on the cited page when re-checked; those claims may be paraphrased or out of date.",
+    "The approval wait (None) is reported by developers, not published by the provider."
+  ],
+  "agent": {
+    "model": "gemini-2.5-flash",
+    "discovery_notes": "API access and webhooks require a paid Calendly plan (Professional, Teams, or Enterprise) for some features. OAuth does not use granular scopes; an access token can access everything the user can. Was unable to browse the developer portal directly to confirm OAuth documentation URL.",
+    "oauth": "yes",
+    "oauth_docs_url": "https://developer.calendly.com/api-docs/references/authentication/oauth"
+  },
+  "evidence_stats": {
+    "steps": 9,
+    "sourced": 7,
+    "uncertain": 2,
+    "official_sources": 9,
+    "community_sources": 3,
+    "quotes_found": 5,
+    "quotes_not_found": 1,
+    "quotes_unreadable": 3
+  },
+  "research_trace": [
+    {
+      "facet": "register",
+      "queries": [
+        "Calendly OAuth app registration",
+        "Calendly developer account",
+        "Calendly OAuth app types",
+        "Calendly OAuth redirect URIs localhost",
+        "Calendly OAuth app approval process",
+        "Calendly OAuth app testing before approval"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "review",
+      "queries": [
+        "Calendly OAuth app approval process",
+        "Calendly API review process",
+        "Calendly developer app submission requirements",
+        "Calendly OAuth app review process",
+        "Calendly production app approval",
+        "Calendly developer app submission requirements",
+        "Calendly marketplace listing review",
+        "Calendly sensitive scopes approval",
+        "Calendly app verification timeline",
+        "Calendly app rejection reasons"
+      ],
+      "grounded": [],
+      "urlsRead": [
+        {
+          "url": "https://developer.calendly.com/api-docs/references/authentication/oauth",
+          "status": "URL_RETRIEVAL_STATUS_ERROR"
+        },
+        {
+          "url": "https://developer.calendly.com/api-docs/references/authentication/oauth",
+          "status": "URL_RETRIEVAL_STATUS_ERROR"
+        }
+      ],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "limits",
+      "queries": [
+        "Calendly API scopes",
+        "Calendly API permissions",
+        "Calendly OAuth scopes",
+        "Calendly API pricing",
+        "Calendly API plans",
+        "Calendly API rate limits",
+        "Calendly API unreviewed app limits",
+        "Calendly API changes 2025",
+        "Calendly API updates 2024",
+        "Calendly developer news",
+        "Calendly API deprecations",
+        "Calendly API terms of service AI",
+        "Calendly API data usage policy",
+        "Calendly developer policy AI training",
+        "Calendly API sandbox",
+        "Calendly API regional instances",
+        "Calendly API separate app",
+        "Calendly developer portal changelog"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search-only"
+    }
+  ]
+}

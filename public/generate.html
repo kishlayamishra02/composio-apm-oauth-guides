@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Researching… · OAuth Launch Guides</title>
+  <meta name="description" content="A research agent investigates an app's OAuth setup and approval process and writes a shareable guide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1c1a'/%3E%3Ctext x='16' y='21' font-size='14' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3EOA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">OA</span>OAuth Launch Guides</a>
+    <nav class="nav"><a href="/">Library</a><a href="/method.html">How it works</a></nav>
+  </div></header>
+
+  <main class="wrap">
+    <section id="run" class="narrow" style="padding-top:28px">
+      <div class="crumbs" style="padding:0"><a href="/">Library</a> / Research</div>
+      <h1 id="title" style="margin-top:10px">Research an app</h1>
+      <p class="muted" id="sub" style="margin-top:8px">The agent identifies the app's developer programme, investigates registration, approval and limits in parallel, writes a guide from what it found, then re-reads the pages it cited to check its own quotes. Usually one to three minutes; you can leave this page open.</p>
+      <form id="form" class="search" style="margin-top:18px" autocomplete="off">
+        <div style="display:flex;gap:8px"><input id="q" type="text" maxlength="120" placeholder="App name or website" aria-label="App name or website"><button class="btn" type="submit">Research</button></div>
+      </form>
+      <div id="notice"></div>
+      <ol class="trace hidden" id="trace">
+        <li id="t-discover"><div class="th"><span class="st"></span>Identify the app and its developer programme<span class="elapsed"></span></div><div class="tb"></div></li>
+        <li id="t-research"><div class="th"><span class="st"></span>Investigate three questions in parallel<span class="elapsed"></span></div>
+          <div class="sub">
+            <div id="t-register"><div class="th"><span class="st"></span>Registration, and what works before approval</div><div class="tb" style="margin-left:28px"></div></div>
+            <div id="t-review"><div class="th"><span class="st"></span>Approval: triggers, requirements, waits</div><div class="tb" style="margin-left:28px"></div></div>
+            <div id="t-limits"><div class="th"><span class="st"></span>Scopes, plans, rate limits, recent changes</div><div class="tb" style="margin-left:28px"></div></div>
+          </div></li>
+        <li id="t-synthesize"><div class="th"><span class="st"></span>Write the guide from the findings only<span class="elapsed"></span></div><div class="tb"></div></li>
+        <li id="t-verify"><div class="th"><span class="st"></span>Check its own work: re-read cited pages, probe the developer portal<span class="elapsed"></span></div><div class="tb"></div></li>
+      </ol>
+    </section>
+    <div id="guide"></div>
+  </main>
+  <footer class="foot"><div class="wrap">Live guides are written by a model from public web pages and checked automatically. They are a starting point, not a verified answer: check anything marked <b>uncertain</b>.</div></footer>
+  <script type="module" src="/js/generate.js"></script>
+</body>
+</html>

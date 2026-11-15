@@ -1,0 +1,2916 @@
+{
+ "source": "https://docs.composio.dev/toolkits/managed-auth.md",
+ "fetched": "2026-11-14",
+ "counts": {
+  "total": 415,
+  "managed": 128,
+  "byo": 287
+ },
+ "apps": [
+  {
+   "name": "Adobe Marketing Agent MCP",
+   "slug": "adobe-marketing-agent-mcp",
+   "toolkit": "ADOBE_MARKETING_AGENT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/adobe_marketing_agent_mcp"
+  },
+  {
+   "name": "AdRoll",
+   "slug": "adroll",
+   "toolkit": "ADROLL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/adroll"
+  },
+  {
+   "name": "Aha!",
+   "slug": "aha",
+   "toolkit": "AHA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/aha"
+  },
+  {
+   "name": "Ahrefs",
+   "slug": "ahrefs",
+   "toolkit": "AHREFS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ahrefs"
+  },
+  {
+   "name": "Ahrefs MCP",
+   "slug": "ahrefs-mcp",
+   "toolkit": "AHREFS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ahrefs_mcp"
+  },
+  {
+   "name": "Aircall",
+   "slug": "aircall",
+   "toolkit": "AIRCALL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/aircall"
+  },
+  {
+   "name": "AirOps MCP",
+   "slug": "airops-mcp",
+   "toolkit": "AIROPS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/airops_mcp"
+  },
+  {
+   "name": "Airtable",
+   "slug": "airtable",
+   "toolkit": "AIRTABLE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/airtable"
+  },
+  {
+   "name": "Alpaca",
+   "slug": "alpaca",
+   "toolkit": "ALPACA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/alpaca"
+  },
+  {
+   "name": "Amazon",
+   "slug": "amazon",
+   "toolkit": "AMAZON",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/amazon"
+  },
+  {
+   "name": "Amplitude MCP",
+   "slug": "amplitude-mcp",
+   "toolkit": "AMPLITUDE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/amplitude_mcp"
+  },
+  {
+   "name": "Anaplan",
+   "slug": "anaplan",
+   "toolkit": "ANAPLAN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/anaplan"
+  },
+  {
+   "name": "Apaleo",
+   "slug": "apaleo",
+   "toolkit": "APALEO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/apaleo"
+  },
+  {
+   "name": "Apify MCP",
+   "slug": "apify-mcp",
+   "toolkit": "APIFY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/apify_mcp"
+  },
+  {
+   "name": "Asana",
+   "slug": "asana",
+   "toolkit": "ASANA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/asana"
+  },
+  {
+   "name": "Atlassian MCP",
+   "slug": "atlassian-mcp",
+   "toolkit": "ATLASSIAN_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/atlassian_mcp"
+  },
+  {
+   "name": "Attio",
+   "slug": "attio",
+   "toolkit": "ATTIO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/attio"
+  },
+  {
+   "name": "Audioscrape MCP",
+   "slug": "audioscrape-mcp",
+   "toolkit": "AUDIOSCRAPE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/audioscrape_mcp"
+  },
+  {
+   "name": "AWeber",
+   "slug": "aweber",
+   "toolkit": "AWEBER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/aweber"
+  },
+  {
+   "name": "Azure Monitor Activity Log",
+   "slug": "azure-monitor-activity-log",
+   "toolkit": "AZURE_MONITOR_ACTIVITY_LOG",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/azure_monitor_activity_log"
+  },
+  {
+   "name": "BambooHR",
+   "slug": "bamboohr",
+   "toolkit": "BAMBOOHR",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/bamboohr"
+  },
+  {
+   "name": "Basecamp",
+   "slug": "basecamp",
+   "toolkit": "BASECAMP",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/basecamp"
+  },
+  {
+   "name": "Beeminder",
+   "slug": "beeminder",
+   "toolkit": "BEEMINDER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/beeminder"
+  },
+  {
+   "name": "Better Stack MCP",
+   "slug": "better-stack-mcp",
+   "toolkit": "BETTER_STACK_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/better_stack_mcp"
+  },
+  {
+   "name": "bexio",
+   "slug": "bexio",
+   "toolkit": "BEXIO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/bexio"
+  },
+  {
+   "name": "Bitbucket",
+   "slug": "bitbucket",
+   "toolkit": "BITBUCKET",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/bitbucket"
+  },
+  {
+   "name": "Bitly",
+   "slug": "bitly",
+   "toolkit": "BITLY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/bitly"
+  },
+  {
+   "name": "Bitwarden",
+   "slug": "bitwarden",
+   "toolkit": "BITWARDEN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/bitwarden"
+  },
+  {
+   "name": "Blackbaud",
+   "slug": "blackbaud",
+   "toolkit": "BLACKBAUD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/blackbaud"
+  },
+  {
+   "name": "Blackboard",
+   "slug": "blackboard",
+   "toolkit": "BLACKBOARD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/blackboard"
+  },
+  {
+   "name": "Boldsign",
+   "slug": "boldsign",
+   "toolkit": "BOLDSIGN",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/boldsign"
+  },
+  {
+   "name": "Borneo",
+   "slug": "borneo",
+   "toolkit": "BORNEO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/borneo"
+  },
+  {
+   "name": "Box",
+   "slug": "box",
+   "toolkit": "BOX",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/box"
+  },
+  {
+   "name": "Box MCP",
+   "slug": "box-mcp",
+   "toolkit": "BOX_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/box_mcp"
+  },
+  {
+   "name": "Brevo",
+   "slug": "brevo",
+   "toolkit": "BREVO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/brevo"
+  },
+  {
+   "name": "Brex",
+   "slug": "brex",
+   "toolkit": "BREX",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/brex"
+  },
+  {
+   "name": "Buffer",
+   "slug": "buffer",
+   "toolkit": "BUFFER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/buffer"
+  },
+  {
+   "name": "Cal",
+   "slug": "cal",
+   "toolkit": "CAL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/cal"
+  },
+  {
+   "name": "Calendly",
+   "slug": "calendly",
+   "toolkit": "CALENDLY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/calendly"
+  },
+  {
+   "name": "Calendly MCP",
+   "slug": "calendly-mcp",
+   "toolkit": "CALENDLY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/calendly_mcp"
+  },
+  {
+   "name": "Candid MCP",
+   "slug": "candid-mcp",
+   "toolkit": "CANDID_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/candid_mcp"
+  },
+  {
+   "name": "Canva",
+   "slug": "canva",
+   "toolkit": "CANVA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/canva"
+  },
+  {
+   "name": "Canva MCP",
+   "slug": "canva-mcp",
+   "toolkit": "CANVA_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/canva_mcp"
+  },
+  {
+   "name": "Canvas",
+   "slug": "canvas",
+   "toolkit": "CANVAS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/canvas"
+  },
+  {
+   "name": "Capsule CRM",
+   "slug": "capsule-crm",
+   "toolkit": "CAPSULE_CRM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/capsule_crm"
+  },
+  {
+   "name": "Carbon Voice MCP",
+   "slug": "carbon-voice-mcp",
+   "toolkit": "CARBON_VOICE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/carbon_voice_mcp"
+  },
+  {
+   "name": "Carta",
+   "slug": "carta",
+   "toolkit": "CARTA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/carta"
+  },
+  {
+   "name": "Cashfree MCP",
+   "slug": "cashfree-payments-mcp",
+   "toolkit": "CASHFREE_PAYMENTS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/cashfree_payments_mcp"
+  },
+  {
+   "name": "Circleback MCP",
+   "slug": "circleback-mcp",
+   "toolkit": "CIRCLEBACK_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/circleback_mcp"
+  },
+  {
+   "name": "Clarify MCP",
+   "slug": "clarify-mcp",
+   "toolkit": "CLARIFY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clarify_mcp"
+  },
+  {
+   "name": "Clay MCP",
+   "slug": "clay-mcp",
+   "toolkit": "CLAY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clay_mcp"
+  },
+  {
+   "name": "CleverReach",
+   "slug": "cleverreach",
+   "toolkit": "CLEVERREACH",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/cleverreach"
+  },
+  {
+   "name": "ClickFunnels 2.0",
+   "slug": "clickfunnels",
+   "toolkit": "CLICKFUNNELS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clickfunnels"
+  },
+  {
+   "name": "ClickHouse MCP",
+   "slug": "clickhouse-mcp",
+   "toolkit": "CLICKHOUSE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clickhouse_mcp"
+  },
+  {
+   "name": "ClickUp",
+   "slug": "clickup",
+   "toolkit": "CLICKUP",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/clickup"
+  },
+  {
+   "name": "ClickUp MCP",
+   "slug": "clickup-mcp",
+   "toolkit": "CLICKUP_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clickup_mcp"
+  },
+  {
+   "name": "Clio Manage",
+   "slug": "clio-manage",
+   "toolkit": "CLIO_MANAGE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clio_manage"
+  },
+  {
+   "name": "Clockify",
+   "slug": "clockify",
+   "toolkit": "CLOCKIFY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clockify"
+  },
+  {
+   "name": "Close MCP",
+   "slug": "close-mcp",
+   "toolkit": "CLOSE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/close_mcp"
+  },
+  {
+   "name": "Cloud 66",
+   "slug": "cloud-66",
+   "toolkit": "CLOUD_66",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/cloud_66"
+  },
+  {
+   "name": "Cloudflare MCP",
+   "slug": "cloudflare-mcp",
+   "toolkit": "CLOUDFLARE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/cloudflare_mcp"
+  },
+  {
+   "name": "Clover",
+   "slug": "clover",
+   "toolkit": "CLOVER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clover"
+  },
+  {
+   "name": "Clueso MCP",
+   "slug": "clueso-mcp",
+   "toolkit": "CLUESO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/clueso_mcp"
+  },
+  {
+   "name": "Coinbase Agents MCP",
+   "slug": "coinbase-agents-mcp",
+   "toolkit": "COINBASE_AGENTS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/coinbase_agents_mcp"
+  },
+  {
+   "name": "Coinbase Wallet MCP",
+   "slug": "coinbase-wallet-mcp",
+   "toolkit": "COINBASE_WALLET_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/coinbase_wallet_mcp"
+  },
+  {
+   "name": "Commerce Layer",
+   "slug": "commerce-layer",
+   "toolkit": "COMMERCE_LAYER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/commerce_layer"
+  },
+  {
+   "name": "Common Room MCP",
+   "slug": "common-room-mcp",
+   "toolkit": "COMMON_ROOM_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/common_room_mcp"
+  },
+  {
+   "name": "Confluence",
+   "slug": "confluence",
+   "toolkit": "CONFLUENCE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/confluence"
+  },
+  {
+   "name": "Consensus MCP",
+   "slug": "consensus-mcp",
+   "toolkit": "CONSENSUS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/consensus_mcp"
+  },
+  {
+   "name": "Constant Contact",
+   "slug": "constant-contact",
+   "toolkit": "CONSTANT_CONTACT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/constant_contact"
+  },
+  {
+   "name": "Contacts+",
+   "slug": "contacts-plus",
+   "toolkit": "CONTACTS_PLUS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/contacts_plus"
+  },
+  {
+   "name": "Contentful",
+   "slug": "contentful",
+   "toolkit": "CONTENTFUL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/contentful"
+  },
+  {
+   "name": "Contentsquare MCP",
+   "slug": "contentsquare-mcp",
+   "toolkit": "CONTENTSQUARE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/contentsquare_mcp"
+  },
+  {
+   "name": "Coupa",
+   "slug": "coupa",
+   "toolkit": "COUPA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/coupa"
+  },
+  {
+   "name": "Cradl AI",
+   "slug": "cradl-ai",
+   "toolkit": "CRADL_AI",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/cradl_ai"
+  },
+  {
+   "name": "Craft MCP",
+   "slug": "craft-mcp",
+   "toolkit": "CRAFT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/craft_mcp"
+  },
+  {
+   "name": "Crowdin",
+   "slug": "crowdin",
+   "toolkit": "CROWDIN",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/crowdin"
+  },
+  {
+   "name": "Customer.io MCP",
+   "slug": "customerio-mcp",
+   "toolkit": "CUSTOMERIO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/customerio_mcp"
+  },
+  {
+   "name": "D2L Brightspace",
+   "slug": "d2lbrightspace",
+   "toolkit": "D2LBRIGHTSPACE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/d2lbrightspace"
+  },
+  {
+   "name": "Dart",
+   "slug": "dart",
+   "toolkit": "DART",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/dart"
+  },
+  {
+   "name": "Databricks",
+   "slug": "databricks",
+   "toolkit": "DATABRICKS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/databricks"
+  },
+  {
+   "name": "Datadog",
+   "slug": "datadog",
+   "toolkit": "DATADOG",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/datadog"
+  },
+  {
+   "name": "Datadog MCP",
+   "slug": "datadog-mcp",
+   "toolkit": "DATADOG_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/datadog_mcp"
+  },
+  {
+   "name": "Daytona",
+   "slug": "daytona",
+   "toolkit": "DAYTONA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/daytona"
+  },
+  {
+   "name": "dbt Cloud",
+   "slug": "dbt-cloud",
+   "toolkit": "DBT_CLOUD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/dbt_cloud"
+  },
+  {
+   "name": "Deel",
+   "slug": "deel",
+   "toolkit": "DEEL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/deel"
+  },
+  {
+   "name": "DeepL MCP",
+   "slug": "deepl-mcp",
+   "toolkit": "DEEPL_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/deepl_mcp"
+  },
+  {
+   "name": "Deputy",
+   "slug": "deputy",
+   "toolkit": "DEPUTY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/deputy"
+  },
+  {
+   "name": "Descript MCP",
+   "slug": "descript-mcp",
+   "toolkit": "DESCRIPT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/descript_mcp"
+  },
+  {
+   "name": "DevCycle",
+   "slug": "dev-cycle",
+   "toolkit": "DEV_CYCLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/dev_cycle"
+  },
+  {
+   "name": "Dialpad",
+   "slug": "dialpad",
+   "toolkit": "DIALPAD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/dialpad"
+  },
+  {
+   "name": "DigitalOcean",
+   "slug": "digital-ocean",
+   "toolkit": "DIGITAL_OCEAN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/digital_ocean"
+  },
+  {
+   "name": "Discord",
+   "slug": "discord",
+   "toolkit": "DISCORD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/discord"
+  },
+  {
+   "name": "Discord Bot",
+   "slug": "discordbot",
+   "toolkit": "DISCORDBOT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/discordbot"
+  },
+  {
+   "name": "Disqus",
+   "slug": "disqus",
+   "toolkit": "DISQUS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/disqus"
+  },
+  {
+   "name": "DocuSign",
+   "slug": "docusign",
+   "toolkit": "DOCUSIGN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/docusign"
+  },
+  {
+   "name": "Dribbble",
+   "slug": "dribbble",
+   "toolkit": "DRIBBBLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/dribbble"
+  },
+  {
+   "name": "Dropbox",
+   "slug": "dropbox",
+   "toolkit": "DROPBOX",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/dropbox"
+  },
+  {
+   "name": "Dropbox Sign",
+   "slug": "dropbox-sign",
+   "toolkit": "DROPBOX_SIGN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/dropbox_sign"
+  },
+  {
+   "name": "Dub",
+   "slug": "dub",
+   "toolkit": "DUB",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/dub"
+  },
+  {
+   "name": "Dynamics 365",
+   "slug": "dynamics365",
+   "toolkit": "DYNAMICS365",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/dynamics365"
+  },
+  {
+   "name": "Dynatrace",
+   "slug": "dynatrace",
+   "toolkit": "DYNATRACE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/dynatrace"
+  },
+  {
+   "name": "eBay",
+   "slug": "ebay",
+   "toolkit": "EBAY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ebay"
+  },
+  {
+   "name": "Egnyte",
+   "slug": "egnyte",
+   "toolkit": "EGNYTE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/egnyte"
+  },
+  {
+   "name": "Epic Games",
+   "slug": "epic-games",
+   "toolkit": "EPIC_GAMES",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/epic_games"
+  },
+  {
+   "name": "Era Context MCP",
+   "slug": "era-context-mcp",
+   "toolkit": "ERA_CONTEXT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/era_context_mcp"
+  },
+  {
+   "name": "Eraser MCP",
+   "slug": "eraser-mcp",
+   "toolkit": "ERASER_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/eraser_mcp"
+  },
+  {
+   "name": "Eventbrite",
+   "slug": "eventbrite",
+   "toolkit": "EVENTBRITE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/eventbrite"
+  },
+  {
+   "name": "Excel",
+   "slug": "excel",
+   "toolkit": "EXCEL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/excel"
+  },
+  {
+   "name": "Exist",
+   "slug": "exist",
+   "toolkit": "EXIST",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/exist"
+  },
+  {
+   "name": "Facebook",
+   "slug": "facebook",
+   "toolkit": "FACEBOOK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/facebook"
+  },
+  {
+   "name": "Fathom",
+   "slug": "fathom",
+   "toolkit": "FATHOM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/fathom"
+  },
+  {
+   "name": "Fellow.ai MCP",
+   "slug": "fellow-ai-mcp",
+   "toolkit": "FELLOW_AI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/fellow_ai_mcp"
+  },
+  {
+   "name": "Figma",
+   "slug": "figma",
+   "toolkit": "FIGMA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/figma"
+  },
+  {
+   "name": "Financial Datasets AI MCP",
+   "slug": "financial-datasets-ai-mcp",
+   "toolkit": "FINANCIAL_DATASETS_AI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/financial_datasets_ai_mcp"
+  },
+  {
+   "name": "Follow Up Boss",
+   "slug": "follow-up-boss",
+   "toolkit": "FOLLOW_UP_BOSS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/follow_up_boss"
+  },
+  {
+   "name": "Frame.io V4",
+   "slug": "frame-io-v4",
+   "toolkit": "FRAME_IO_V4",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/frame_io_v4"
+  },
+  {
+   "name": "Freeagent",
+   "slug": "freeagent",
+   "toolkit": "FREEAGENT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/freeagent"
+  },
+  {
+   "name": "freee",
+   "slug": "freee",
+   "toolkit": "FREEE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/freee"
+  },
+  {
+   "name": "FreshBooks",
+   "slug": "freshbooks",
+   "toolkit": "FRESHBOOKS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/freshbooks"
+  },
+  {
+   "name": "Freshsales",
+   "slug": "freshsales",
+   "toolkit": "FRESHSALES",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/freshsales"
+  },
+  {
+   "name": "Front",
+   "slug": "front",
+   "toolkit": "FRONT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/front"
+  },
+  {
+   "name": "FuseAI MCP",
+   "slug": "fuseai-mcp",
+   "toolkit": "FUSEAI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/fuseai_mcp"
+  },
+  {
+   "name": "Gagelist",
+   "slug": "gagelist",
+   "toolkit": "GAGELIST",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/gagelist"
+  },
+  {
+   "name": "GetResponse",
+   "slug": "getresponse",
+   "toolkit": "GETRESPONSE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/getresponse"
+  },
+  {
+   "name": "GitHub",
+   "slug": "github",
+   "toolkit": "GITHUB",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/github"
+  },
+  {
+   "name": "GitLab",
+   "slug": "gitlab",
+   "toolkit": "GITLAB",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/gitlab"
+  },
+  {
+   "name": "Glen MCP",
+   "slug": "glen-mcp",
+   "toolkit": "GLEN_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/glen_mcp"
+  },
+  {
+   "name": "Glide MCP",
+   "slug": "glide-mcp",
+   "toolkit": "GLIDE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/glide_mcp"
+  },
+  {
+   "name": "Gmail",
+   "slug": "gmail",
+   "toolkit": "GMAIL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/gmail"
+  },
+  {
+   "name": "GoCardless MCP",
+   "slug": "gocardless-mcp",
+   "toolkit": "GOCARDLESS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/gocardless_mcp"
+  },
+  {
+   "name": "Gong",
+   "slug": "gong",
+   "toolkit": "GONG",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/gong"
+  },
+  {
+   "name": "Google Admin",
+   "slug": "google-admin",
+   "toolkit": "GOOGLE_ADMIN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_admin"
+  },
+  {
+   "name": "Google Ads",
+   "slug": "googleads",
+   "toolkit": "GOOGLEADS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googleads"
+  },
+  {
+   "name": "Google AdSense",
+   "slug": "google-adsense",
+   "toolkit": "GOOGLE_ADSENSE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_adsense"
+  },
+  {
+   "name": "Google Analytics",
+   "slug": "google-analytics",
+   "toolkit": "GOOGLE_ANALYTICS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/google_analytics"
+  },
+  {
+   "name": "Google BigQuery",
+   "slug": "googlebigquery",
+   "toolkit": "GOOGLEBIGQUERY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlebigquery"
+  },
+  {
+   "name": "Google Business Profile",
+   "slug": "google-business-profile",
+   "toolkit": "GOOGLE_BUSINESS_PROFILE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_business_profile"
+  },
+  {
+   "name": "Google Calendar",
+   "slug": "googlecalendar",
+   "toolkit": "GOOGLECALENDAR",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlecalendar"
+  },
+  {
+   "name": "Google Chat",
+   "slug": "google-chat",
+   "toolkit": "GOOGLE_CHAT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_chat"
+  },
+  {
+   "name": "Google Classroom",
+   "slug": "google-classroom",
+   "toolkit": "GOOGLE_CLASSROOM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/google_classroom"
+  },
+  {
+   "name": "Google Data Studio",
+   "slug": "google-data-studio",
+   "toolkit": "GOOGLE_DATA_STUDIO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_data_studio"
+  },
+  {
+   "name": "Google Docs",
+   "slug": "googledocs",
+   "toolkit": "GOOGLEDOCS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googledocs"
+  },
+  {
+   "name": "Google Drive",
+   "slug": "googledrive",
+   "toolkit": "GOOGLEDRIVE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googledrive"
+  },
+  {
+   "name": "Google Maps",
+   "slug": "google-maps",
+   "toolkit": "GOOGLE_MAPS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/google_maps"
+  },
+  {
+   "name": "Google Meet",
+   "slug": "googlemeet",
+   "toolkit": "GOOGLEMEET",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlemeet"
+  },
+  {
+   "name": "Google Merchant Center",
+   "slug": "google-merchant",
+   "toolkit": "GOOGLE_MERCHANT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/google_merchant"
+  },
+  {
+   "name": "Google Photos",
+   "slug": "googlephotos",
+   "toolkit": "GOOGLEPHOTOS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlephotos"
+  },
+  {
+   "name": "Google Search Console",
+   "slug": "google-search-console",
+   "toolkit": "GOOGLE_SEARCH_CONSOLE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/google_search_console"
+  },
+  {
+   "name": "Google Sheets",
+   "slug": "googlesheets",
+   "toolkit": "GOOGLESHEETS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlesheets"
+  },
+  {
+   "name": "Google Slides",
+   "slug": "googleslides",
+   "toolkit": "GOOGLESLIDES",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googleslides"
+  },
+  {
+   "name": "Google Super",
+   "slug": "googlesuper",
+   "toolkit": "GOOGLESUPER",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googlesuper"
+  },
+  {
+   "name": "Google Tasks",
+   "slug": "googletasks",
+   "toolkit": "GOOGLETASKS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/googletasks"
+  },
+  {
+   "name": "Googlecontacts",
+   "slug": "googlecontacts",
+   "toolkit": "GOOGLECONTACTS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/googlecontacts"
+  },
+  {
+   "name": "Googleforms",
+   "slug": "googleforms",
+   "toolkit": "GOOGLEFORMS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/googleforms"
+  },
+  {
+   "name": "Gorgias",
+   "slug": "gorgias",
+   "toolkit": "GORGIAS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/gorgias"
+  },
+  {
+   "name": "GoTo Training",
+   "slug": "go-to-training",
+   "toolkit": "GO_TO_TRAINING",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/go_to_training"
+  },
+  {
+   "name": "Grafana Cloud MCP",
+   "slug": "grafana-cloud-mcp",
+   "toolkit": "GRAFANA_CLOUD_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/grafana_cloud_mcp"
+  },
+  {
+   "name": "Granola MCP",
+   "slug": "granola-mcp",
+   "toolkit": "GRANOLA_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/granola_mcp"
+  },
+  {
+   "name": "Greenhouse",
+   "slug": "greenhouse",
+   "toolkit": "GREENHOUSE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/greenhouse"
+  },
+  {
+   "name": "Greptile MCP",
+   "slug": "greptile-mcp",
+   "toolkit": "GREPTILE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/greptile_mcp"
+  },
+  {
+   "name": "Gumroad",
+   "slug": "gumroad",
+   "toolkit": "GUMROAD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/gumroad"
+  },
+  {
+   "name": "Gusto",
+   "slug": "gusto",
+   "toolkit": "GUSTO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/gusto"
+  },
+  {
+   "name": "HaloPSA",
+   "slug": "halopsa",
+   "toolkit": "HALOPSA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/halopsa"
+  },
+  {
+   "name": "Harvest",
+   "slug": "harvest",
+   "toolkit": "HARVEST",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/harvest"
+  },
+  {
+   "name": "Help Scout",
+   "slug": "help-scout",
+   "toolkit": "HELP_SCOUT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/help_scout"
+  },
+  {
+   "name": "Higgsfield MCP",
+   "slug": "higgsfield-mcp",
+   "toolkit": "HIGGSFIELD_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/higgsfield_mcp"
+  },
+  {
+   "name": "HighLevel Agency",
+   "slug": "highlevel-agency",
+   "toolkit": "HIGHLEVEL_AGENCY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/highlevel_agency"
+  },
+  {
+   "name": "HighLevel Location",
+   "slug": "highlevel-location",
+   "toolkit": "HIGHLEVEL_LOCATION",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/highlevel_location"
+  },
+  {
+   "name": "Honeycomb MCP",
+   "slug": "honeycomb-mcp",
+   "toolkit": "HONEYCOMB_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/honeycomb_mcp"
+  },
+  {
+   "name": "HubSpot",
+   "slug": "hubspot",
+   "toolkit": "HUBSPOT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/hubspot"
+  },
+  {
+   "name": "Hugging Face",
+   "slug": "hugging-face",
+   "toolkit": "HUGGING_FACE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/hugging_face"
+  },
+  {
+   "name": "Ignav Flights MCP",
+   "slug": "ignav-flights-mcp",
+   "toolkit": "IGNAV_FLIGHTS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ignav_flights_mcp"
+  },
+  {
+   "name": "Imply Polaris",
+   "slug": "imply-polaris",
+   "toolkit": "IMPLY_POLARIS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/imply_polaris"
+  },
+  {
+   "name": "Infisical",
+   "slug": "infisical",
+   "toolkit": "INFISICAL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/infisical"
+  },
+  {
+   "name": "Instagram",
+   "slug": "instagram",
+   "toolkit": "INSTAGRAM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/instagram"
+  },
+  {
+   "name": "Intercom",
+   "slug": "intercom",
+   "toolkit": "INTERCOM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/intercom"
+  },
+  {
+   "name": "Ironclad",
+   "slug": "ironclad",
+   "toolkit": "IRONCLAD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ironclad"
+  },
+  {
+   "name": "Jentic MCP",
+   "slug": "jentic-mcp",
+   "toolkit": "JENTIC_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/jentic_mcp"
+  },
+  {
+   "name": "Jibble",
+   "slug": "jibble",
+   "toolkit": "JIBBLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/jibble"
+  },
+  {
+   "name": "Jira",
+   "slug": "jira",
+   "toolkit": "JIRA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/jira"
+  },
+  {
+   "name": "Jobber",
+   "slug": "jobber",
+   "toolkit": "JOBBER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/jobber"
+  },
+  {
+   "name": "Judge.me",
+   "slug": "judge-me",
+   "toolkit": "JUDGE_ME",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/judge_me"
+  },
+  {
+   "name": "Keiki MCP",
+   "slug": "keiki-mcp",
+   "toolkit": "KEIKI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/keiki_mcp"
+  },
+  {
+   "name": "Kernel MCP",
+   "slug": "kernel-mcp",
+   "toolkit": "KERNEL_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/kernel_mcp"
+  },
+  {
+   "name": "Kick",
+   "slug": "kick",
+   "toolkit": "KICK",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/kick"
+  },
+  {
+   "name": "Kintone REST",
+   "slug": "kintone-rest",
+   "toolkit": "KINTONE_REST",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/kintone_rest"
+  },
+  {
+   "name": "Kit",
+   "slug": "kit",
+   "toolkit": "KIT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/kit"
+  },
+  {
+   "name": "Klaviyo",
+   "slug": "klaviyo",
+   "toolkit": "KLAVIYO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/klaviyo"
+  },
+  {
+   "name": "Kommo",
+   "slug": "kommo",
+   "toolkit": "KOMMO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/kommo"
+  },
+  {
+   "name": "LaunchDarkly",
+   "slug": "launch-darkly",
+   "toolkit": "LAUNCH_DARKLY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/launch_darkly"
+  },
+  {
+   "name": "Legal Data Hunter MCP",
+   "slug": "legal-data-hunter-mcp",
+   "toolkit": "LEGAL_DATA_HUNTER_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/legal_data_hunter_mcp"
+  },
+  {
+   "name": "Lever",
+   "slug": "lever",
+   "toolkit": "LEVER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/lever"
+  },
+  {
+   "name": "Lightspeed Retail X-Series",
+   "slug": "lightspeed",
+   "toolkit": "LIGHTSPEED",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/lightspeed"
+  },
+  {
+   "name": "LILT MCP",
+   "slug": "lilt-mcp",
+   "toolkit": "LILT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/lilt_mcp"
+  },
+  {
+   "name": "Linear",
+   "slug": "linear",
+   "toolkit": "LINEAR",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/linear"
+  },
+  {
+   "name": "Linear MCP",
+   "slug": "linear-mcp",
+   "toolkit": "LINEAR_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/linear_mcp"
+  },
+  {
+   "name": "LinkedIn",
+   "slug": "linkedin",
+   "toolkit": "LINKEDIN",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/linkedin"
+  },
+  {
+   "name": "Linkedin Ads",
+   "slug": "linkedin-ads",
+   "toolkit": "LINKEDIN_ADS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/linkedin_ads"
+  },
+  {
+   "name": "Linkhut",
+   "slug": "linkhut",
+   "toolkit": "LINKHUT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/linkhut"
+  },
+  {
+   "name": "Linode",
+   "slug": "linode",
+   "toolkit": "LINODE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/linode"
+  },
+  {
+   "name": "LiveChat",
+   "slug": "livechat",
+   "toolkit": "LIVECHAT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/livechat"
+  },
+  {
+   "name": "Lodgify",
+   "slug": "lodgify",
+   "toolkit": "LODGIFY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/lodgify"
+  },
+  {
+   "name": "Longbridge MCP",
+   "slug": "longbridge-mcp",
+   "toolkit": "LONGBRIDGE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/longbridge_mcp"
+  },
+  {
+   "name": "Lucid MCP",
+   "slug": "lucid-mcp",
+   "toolkit": "LUCID_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/lucid_mcp"
+  },
+  {
+   "name": "Magic Patterns MCP",
+   "slug": "magic-patterns-mcp",
+   "toolkit": "MAGIC_PATTERNS_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/magic_patterns_mcp"
+  },
+  {
+   "name": "Mailchimp",
+   "slug": "mailchimp",
+   "toolkit": "MAILCHIMP",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/mailchimp"
+  },
+  {
+   "name": "MailUp",
+   "slug": "mail-up",
+   "toolkit": "MAIL_UP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mail_up"
+  },
+  {
+   "name": "MarcoPolo MCP",
+   "slug": "marcopolo-mcp",
+   "toolkit": "MARCOPOLO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/marcopolo_mcp"
+  },
+  {
+   "name": "Matterport",
+   "slug": "matterport",
+   "toolkit": "MATTERPORT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/matterport"
+  },
+  {
+   "name": "Memelord MCP",
+   "slug": "memelord-mcp",
+   "toolkit": "MEMELORD_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/memelord_mcp"
+  },
+  {
+   "name": "Mercury MCP",
+   "slug": "mercury-mcp",
+   "toolkit": "MERCURY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mercury_mcp"
+  },
+  {
+   "name": "Meta Ads",
+   "slug": "metaads",
+   "toolkit": "METAADS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/metaads"
+  },
+  {
+   "name": "Metricool MCP",
+   "slug": "metricool-mcp",
+   "toolkit": "METRICOOL_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/metricool_mcp"
+  },
+  {
+   "name": "Microsoft 365",
+   "slug": "microsoft-365",
+   "toolkit": "MICROSOFT_365",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_365"
+  },
+  {
+   "name": "Microsoft Advertising",
+   "slug": "microsoft-advertising",
+   "toolkit": "MICROSOFT_ADVERTISING",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_advertising"
+  },
+  {
+   "name": "Microsoft Bookings",
+   "slug": "microsoft-bookings",
+   "toolkit": "MICROSOFT_BOOKINGS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_bookings"
+  },
+  {
+   "name": "Microsoft Entra ID",
+   "slug": "microsoft-entra-id",
+   "toolkit": "MICROSOFT_ENTRA_ID",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_entra_id"
+  },
+  {
+   "name": "Microsoft Intune",
+   "slug": "microsoft-intune",
+   "toolkit": "MICROSOFT_INTUNE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_intune"
+  },
+  {
+   "name": "Microsoft OneNote",
+   "slug": "onenote",
+   "toolkit": "ONENOTE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/onenote"
+  },
+  {
+   "name": "Microsoft Planner",
+   "slug": "microsoft-planner",
+   "toolkit": "MICROSOFT_PLANNER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_planner"
+  },
+  {
+   "name": "Microsoft Power Bi",
+   "slug": "microsoft-power-bi",
+   "toolkit": "MICROSOFT_POWER_BI",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_power_bi"
+  },
+  {
+   "name": "Microsoft PowerPoint",
+   "slug": "microsoft-powerpoint",
+   "toolkit": "MICROSOFT_POWERPOINT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_powerpoint"
+  },
+  {
+   "name": "Microsoft Purview",
+   "slug": "microsoft-purview",
+   "toolkit": "MICROSOFT_PURVIEW",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_purview"
+  },
+  {
+   "name": "Microsoft Teams",
+   "slug": "microsoft-teams",
+   "toolkit": "MICROSOFT_TEAMS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_teams"
+  },
+  {
+   "name": "Microsoft To Do",
+   "slug": "microsoft-todo",
+   "toolkit": "MICROSOFT_TODO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_todo"
+  },
+  {
+   "name": "Microsoft Viva Engage",
+   "slug": "microsoft-viva-engage",
+   "toolkit": "MICROSOFT_VIVA_ENGAGE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_viva_engage"
+  },
+  {
+   "name": "Microsoft Word",
+   "slug": "microsoft-word",
+   "toolkit": "MICROSOFT_WORD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/microsoft_word"
+  },
+  {
+   "name": "Midpage MCP",
+   "slug": "midpage-mcp",
+   "toolkit": "MIDPAGE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/midpage_mcp"
+  },
+  {
+   "name": "Mintlify MCP",
+   "slug": "mintlify-mcp",
+   "toolkit": "MINTLIFY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mintlify_mcp"
+  },
+  {
+   "name": "Miro",
+   "slug": "miro",
+   "toolkit": "MIRO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/miro"
+  },
+  {
+   "name": "Mobbin MCP",
+   "slug": "mobbin-mcp",
+   "toolkit": "MOBBIN_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mobbin_mcp"
+  },
+  {
+   "name": "Modem MCP",
+   "slug": "modem-mcp",
+   "toolkit": "MODEM_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/modem_mcp"
+  },
+  {
+   "name": "Monday",
+   "slug": "monday",
+   "toolkit": "MONDAY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/monday"
+  },
+  {
+   "name": "Monday MCP",
+   "slug": "monday-mcp",
+   "toolkit": "MONDAY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/monday_mcp"
+  },
+  {
+   "name": "Money Forward",
+   "slug": "money-forward",
+   "toolkit": "MONEY_FORWARD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/money_forward"
+  },
+  {
+   "name": "Moneybird",
+   "slug": "moneybird",
+   "toolkit": "MONEYBIRD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/moneybird"
+  },
+  {
+   "name": "MongoDB",
+   "slug": "mongodb",
+   "toolkit": "MONGODB",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mongodb"
+  },
+  {
+   "name": "MongoDB MCP",
+   "slug": "mongodb-mcp",
+   "toolkit": "MONGODB_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/mongodb_mcp"
+  },
+  {
+   "name": "MotherDuck MCP",
+   "slug": "motherduck-mcp",
+   "toolkit": "MOTHERDUCK_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/motherduck_mcp"
+  },
+  {
+   "name": "Mural",
+   "slug": "mural",
+   "toolkit": "MURAL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/mural"
+  },
+  {
+   "name": "Navan",
+   "slug": "navan",
+   "toolkit": "NAVAN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/navan"
+  },
+  {
+   "name": "Neo4J",
+   "slug": "neo4j",
+   "toolkit": "NEO4J",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/neo4j"
+  },
+  {
+   "name": "Neon",
+   "slug": "neon",
+   "toolkit": "NEON",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/neon"
+  },
+  {
+   "name": "Neon MCP",
+   "slug": "neon-mcp",
+   "toolkit": "NEON_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/neon_mcp"
+  },
+  {
+   "name": "Netlify MCP",
+   "slug": "netlify-mcp",
+   "toolkit": "NETLIFY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/netlify_mcp"
+  },
+  {
+   "name": "Netsuite",
+   "slug": "netsuite",
+   "toolkit": "NETSUITE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/netsuite"
+  },
+  {
+   "name": "NotebookLM",
+   "slug": "notebook-lm",
+   "toolkit": "NOTEBOOK_LM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/notebook_lm"
+  },
+  {
+   "name": "Notion",
+   "slug": "notion",
+   "toolkit": "NOTION",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/notion"
+  },
+  {
+   "name": "Notion MCP",
+   "slug": "notion-mcp",
+   "toolkit": "NOTION_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/notion_mcp"
+  },
+  {
+   "name": "Octagon MCP",
+   "slug": "octagon-mcp",
+   "toolkit": "OCTAGON_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/octagon_mcp"
+  },
+  {
+   "name": "Omnisend",
+   "slug": "omnisend",
+   "toolkit": "OMNISEND",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/omnisend"
+  },
+  {
+   "name": "OneDrive",
+   "slug": "one-drive",
+   "toolkit": "ONE_DRIVE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/one_drive"
+  },
+  {
+   "name": "Otter.ai MCP",
+   "slug": "otter-ai-mcp",
+   "toolkit": "OTTER_AI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/otter_ai_mcp"
+  },
+  {
+   "name": "Outlook",
+   "slug": "outlook",
+   "toolkit": "OUTLOOK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/outlook"
+  },
+  {
+   "name": "PagerDuty",
+   "slug": "pagerduty",
+   "toolkit": "PAGERDUTY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/pagerduty"
+  },
+  {
+   "name": "PandaDoc MCP",
+   "slug": "pandadoc-mcp",
+   "toolkit": "PANDADOC_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/pandadoc_mcp"
+  },
+  {
+   "name": "Parallel Task MCP",
+   "slug": "parallel-task-mcp",
+   "toolkit": "PARALLEL_TASK_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/parallel_task_mcp"
+  },
+  {
+   "name": "Parma",
+   "slug": "parma",
+   "toolkit": "PARMA",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/parma"
+  },
+  {
+   "name": "Particl MCP",
+   "slug": "particl-mcp",
+   "toolkit": "PARTICL_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/particl_mcp"
+  },
+  {
+   "name": "Paypal",
+   "slug": "paypal",
+   "toolkit": "PAYPAL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/paypal"
+  },
+  {
+   "name": "PayPal Zettle",
+   "slug": "zettle",
+   "toolkit": "ZETTLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zettle"
+  },
+  {
+   "name": "Peec AI MCP",
+   "slug": "peec-ai-mcp",
+   "toolkit": "PEEC_AI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/peec_ai_mcp"
+  },
+  {
+   "name": "Personio",
+   "slug": "personio",
+   "toolkit": "PERSONIO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/personio"
+  },
+  {
+   "name": "Photon MCP",
+   "slug": "photon-mcp",
+   "toolkit": "PHOTON_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/photon_mcp"
+  },
+  {
+   "name": "Pinecone",
+   "slug": "pinecone",
+   "toolkit": "PINECONE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/pinecone"
+  },
+  {
+   "name": "Pinterest",
+   "slug": "pinterest",
+   "toolkit": "PINTEREST",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/pinterest"
+  },
+  {
+   "name": "Pinterest Ads",
+   "slug": "pinterest-ads",
+   "toolkit": "PINTEREST_ADS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/pinterest_ads"
+  },
+  {
+   "name": "Pipedrive",
+   "slug": "pipedrive",
+   "toolkit": "PIPEDRIVE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/pipedrive"
+  },
+  {
+   "name": "Plaid MCP",
+   "slug": "plaid-mcp",
+   "toolkit": "PLAID_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/plaid_mcp"
+  },
+  {
+   "name": "Plain MCP",
+   "slug": "plain-mcp",
+   "toolkit": "PLAIN_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/plain_mcp"
+  },
+  {
+   "name": "PlanetScale",
+   "slug": "planetscale",
+   "toolkit": "PLANETSCALE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/planetscale"
+  },
+  {
+   "name": "Podio",
+   "slug": "podio",
+   "toolkit": "PODIO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/podio"
+  },
+  {
+   "name": "Polar",
+   "slug": "polar",
+   "toolkit": "POLAR",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/polar"
+  },
+  {
+   "name": "PostHog MCP",
+   "slug": "posthog-mcp",
+   "toolkit": "POSTHOG_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/posthog_mcp"
+  },
+  {
+   "name": "Prisma",
+   "slug": "prisma",
+   "toolkit": "PRISMA",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/prisma"
+  },
+  {
+   "name": "Productboard",
+   "slug": "productboard",
+   "toolkit": "PRODUCTBOARD",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/productboard"
+  },
+  {
+   "name": "ProductNow MCP",
+   "slug": "productnow-mcp",
+   "toolkit": "PRODUCTNOW_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/productnow_mcp"
+  },
+  {
+   "name": "Pushbullet",
+   "slug": "pushbullet",
+   "toolkit": "PUSHBULLET",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/pushbullet"
+  },
+  {
+   "name": "Pylon MCP",
+   "slug": "pylon-mcp",
+   "toolkit": "PYLON_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/pylon_mcp"
+  },
+  {
+   "name": "QuickBooks",
+   "slug": "quickbooks",
+   "toolkit": "QUICKBOOKS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/quickbooks"
+  },
+  {
+   "name": "QuickNode MCP",
+   "slug": "quicknode-mcp",
+   "toolkit": "QUICKNODE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/quicknode_mcp"
+  },
+  {
+   "name": "Quire",
+   "slug": "quire",
+   "toolkit": "QUIRE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/quire"
+  },
+  {
+   "name": "Railway",
+   "slug": "railway",
+   "toolkit": "RAILWAY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/railway"
+  },
+  {
+   "name": "Railway MCP",
+   "slug": "railway-mcp",
+   "toolkit": "RAILWAY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/railway_mcp"
+  },
+  {
+   "name": "Ramp",
+   "slug": "ramp",
+   "toolkit": "RAMP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ramp"
+  },
+  {
+   "name": "Ramp MCP",
+   "slug": "ramp-mcp",
+   "toolkit": "RAMP_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ramp_mcp"
+  },
+  {
+   "name": "Razorpay",
+   "slug": "razorpay",
+   "toolkit": "RAZORPAY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/razorpay"
+  },
+  {
+   "name": "RD Station Marketing",
+   "slug": "rd-station-marketing",
+   "toolkit": "RD_STATION_MARKETING",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/rd_station_marketing"
+  },
+  {
+   "name": "Read AI MCP",
+   "slug": "read-ai-mcp",
+   "toolkit": "READ_AI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/read_ai_mcp"
+  },
+  {
+   "name": "Rebrandly",
+   "slug": "rebrandly",
+   "toolkit": "REBRANDLY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/rebrandly"
+  },
+  {
+   "name": "Recraft MCP",
+   "slug": "recraft-mcp",
+   "toolkit": "RECRAFT_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/recraft_mcp"
+  },
+  {
+   "name": "Recruitee",
+   "slug": "recruitee",
+   "toolkit": "RECRUITEE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/recruitee"
+  },
+  {
+   "name": "Reddit",
+   "slug": "reddit",
+   "toolkit": "REDDIT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/reddit"
+  },
+  {
+   "name": "Reddit Ads",
+   "slug": "reddit-ads",
+   "toolkit": "REDDIT_ADS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/reddit_ads"
+  },
+  {
+   "name": "Reloadly",
+   "slug": "reloadly",
+   "toolkit": "RELOADLY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/reloadly"
+  },
+  {
+   "name": "Resend",
+   "slug": "resend",
+   "toolkit": "RESEND",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/resend"
+  },
+  {
+   "name": "Resend MCP",
+   "slug": "resend-mcp",
+   "toolkit": "RESEND_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/resend_mcp"
+  },
+  {
+   "name": "Rillet",
+   "slug": "rillet",
+   "toolkit": "RILLET",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/rillet"
+  },
+  {
+   "name": "Rippling",
+   "slug": "rippling",
+   "toolkit": "RIPPLING",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/rippling"
+  },
+  {
+   "name": "Roam",
+   "slug": "roam",
+   "toolkit": "ROAM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/roam"
+  },
+  {
+   "name": "Sage Intacct",
+   "slug": "sage-intacct",
+   "toolkit": "SAGE_INTACCT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sage_intacct"
+  },
+  {
+   "name": "Salesforce",
+   "slug": "salesforce",
+   "toolkit": "SALESFORCE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/salesforce"
+  },
+  {
+   "name": "Salesforce Data 360",
+   "slug": "salesforce-data-360",
+   "toolkit": "SALESFORCE_DATA_360",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/salesforce_data_360"
+  },
+  {
+   "name": "Salesforce Service Cloud",
+   "slug": "salesforce-service-cloud",
+   "toolkit": "SALESFORCE_SERVICE_CLOUD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/salesforce_service_cloud"
+  },
+  {
+   "name": "Scheduleonce",
+   "slug": "scheduleonce",
+   "toolkit": "SCHEDULEONCE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/scheduleonce"
+  },
+  {
+   "name": "Scorecard MCP",
+   "slug": "scorecard-mcp",
+   "toolkit": "SCORECARD_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/scorecard_mcp"
+  },
+  {
+   "name": "SearchAPI MCP",
+   "slug": "searchapi-mcp",
+   "toolkit": "SEARCHAPI_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/searchapi_mcp"
+  },
+  {
+   "name": "Semrush MCP",
+   "slug": "semrush-mcp",
+   "toolkit": "SEMRUSH_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/semrush_mcp"
+  },
+  {
+   "name": "Sendloop",
+   "slug": "sendloop",
+   "toolkit": "SENDLOOP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sendloop"
+  },
+  {
+   "name": "SendPulse",
+   "slug": "send-pulse",
+   "toolkit": "SEND_PULSE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/send_pulse"
+  },
+  {
+   "name": "Sentry",
+   "slug": "sentry",
+   "toolkit": "SENTRY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/sentry"
+  },
+  {
+   "name": "Sentry MCP",
+   "slug": "sentry-mcp",
+   "toolkit": "SENTRY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sentry_mcp"
+  },
+  {
+   "name": "Servicem8",
+   "slug": "servicem8",
+   "toolkit": "SERVICEM8",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/servicem8"
+  },
+  {
+   "name": "ServiceNow",
+   "slug": "servicenow",
+   "toolkit": "SERVICENOW",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/servicenow"
+  },
+  {
+   "name": "ServiceTitan",
+   "slug": "servicetitan",
+   "toolkit": "SERVICETITAN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/servicetitan"
+  },
+  {
+   "name": "SharePoint",
+   "slug": "share-point",
+   "toolkit": "SHARE_POINT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/share_point"
+  },
+  {
+   "name": "SharePoint Graph",
+   "slug": "sharepoint-graph",
+   "toolkit": "SHAREPOINT_GRAPH",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sharepoint_graph"
+  },
+  {
+   "name": "Shippo",
+   "slug": "shippo",
+   "toolkit": "SHIPPO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/shippo"
+  },
+  {
+   "name": "Shopify",
+   "slug": "shopify",
+   "toolkit": "SHOPIFY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/shopify"
+  },
+  {
+   "name": "Sideshow MCP",
+   "slug": "sideshow-mcp",
+   "toolkit": "SIDESHOW_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sideshow_mcp"
+  },
+  {
+   "name": "SignNow",
+   "slug": "sign-now",
+   "toolkit": "SIGN_NOW",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/sign_now"
+  },
+  {
+   "name": "Simplescraper MCP",
+   "slug": "simplescraper-mcp",
+   "toolkit": "SIMPLESCRAPER_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/simplescraper_mcp"
+  },
+  {
+   "name": "Slack",
+   "slug": "slack",
+   "toolkit": "SLACK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/slack"
+  },
+  {
+   "name": "Slackbot",
+   "slug": "slackbot",
+   "toolkit": "SLACKBOT",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/slackbot"
+  },
+  {
+   "name": "Smartsheet",
+   "slug": "smartsheet",
+   "toolkit": "SMARTSHEET",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/smartsheet"
+  },
+  {
+   "name": "Smokeball",
+   "slug": "smokeball",
+   "toolkit": "SMOKEBALL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/smokeball"
+  },
+  {
+   "name": "Snapchat",
+   "slug": "snapchat",
+   "toolkit": "SNAPCHAT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/snapchat"
+  },
+  {
+   "name": "Snowflake",
+   "slug": "snowflake",
+   "toolkit": "SNOWFLAKE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/snowflake"
+  },
+  {
+   "name": "Snyk",
+   "slug": "snyk",
+   "toolkit": "SNYK",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/snyk"
+  },
+  {
+   "name": "SoundCloud",
+   "slug": "soundcloud",
+   "toolkit": "SOUNDCLOUD",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/soundcloud"
+  },
+  {
+   "name": "Splice MCP",
+   "slug": "splice-mcp",
+   "toolkit": "SPLICE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/splice_mcp"
+  },
+  {
+   "name": "Splitwise",
+   "slug": "splitwise",
+   "toolkit": "SPLITWISE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/splitwise"
+  },
+  {
+   "name": "Spotify",
+   "slug": "spotify",
+   "toolkit": "SPOTIFY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/spotify"
+  },
+  {
+   "name": "Square",
+   "slug": "square",
+   "toolkit": "SQUARE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/square"
+  },
+  {
+   "name": "Stack Exchange",
+   "slug": "stack-exchange",
+   "toolkit": "STACK_EXCHANGE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/stack_exchange"
+  },
+  {
+   "name": "Statsig MCP",
+   "slug": "statsig-mcp",
+   "toolkit": "STATSIG_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/statsig_mcp"
+  },
+  {
+   "name": "Storyblok",
+   "slug": "storyblok",
+   "toolkit": "STORYBLOK",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/storyblok"
+  },
+  {
+   "name": "Stripe",
+   "slug": "stripe",
+   "toolkit": "STRIPE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/stripe"
+  },
+  {
+   "name": "Stripe MCP",
+   "slug": "stripe-mcp",
+   "toolkit": "STRIPE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/stripe_mcp"
+  },
+  {
+   "name": "Stytch MCP",
+   "slug": "stytch-mcp",
+   "toolkit": "STYTCH_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/stytch_mcp"
+  },
+  {
+   "name": "Supabase",
+   "slug": "supabase",
+   "toolkit": "SUPABASE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/supabase"
+  },
+  {
+   "name": "Supabase MCP",
+   "slug": "supabase-mcp",
+   "toolkit": "SUPABASE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/supabase_mcp"
+  },
+  {
+   "name": "Supabase Read MCP",
+   "slug": "supabase-read-mcp",
+   "toolkit": "SUPABASE_READ_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/supabase_read_mcp"
+  },
+  {
+   "name": "SurveyMonkey",
+   "slug": "survey-monkey",
+   "toolkit": "SURVEY_MONKEY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/survey_monkey"
+  },
+  {
+   "name": "Synthesize Bio MCP",
+   "slug": "synthesize-bio-mcp",
+   "toolkit": "SYNTHESIZE_BIO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/synthesize_bio_mcp"
+  },
+  {
+   "name": "Tally",
+   "slug": "tally",
+   "toolkit": "TALLY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/tally"
+  },
+  {
+   "name": "Tavily MCP",
+   "slug": "tavily-mcp",
+   "toolkit": "TAVILY_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/tavily_mcp"
+  },
+  {
+   "name": "Teamleader Focus",
+   "slug": "teamleader",
+   "toolkit": "TEAMLEADER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/teamleader"
+  },
+  {
+   "name": "ThoughtSpot Spotter MCP",
+   "slug": "thoughtspot-spotter-mcp",
+   "toolkit": "THOUGHTSPOT_SPOTTER_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/thoughtspot_spotter_mcp"
+  },
+  {
+   "name": "Threads",
+   "slug": "threads",
+   "toolkit": "THREADS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/threads"
+  },
+  {
+   "name": "Ticket Tailor MCP",
+   "slug": "ticket-tailor-mcp",
+   "toolkit": "TICKET_TAILOR_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/ticket_tailor_mcp"
+  },
+  {
+   "name": "Ticketmaster",
+   "slug": "ticketmaster",
+   "toolkit": "TICKETMASTER",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/ticketmaster"
+  },
+  {
+   "name": "Ticktick",
+   "slug": "ticktick",
+   "toolkit": "TICKTICK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/ticktick"
+  },
+  {
+   "name": "Tiktok",
+   "slug": "tiktok",
+   "toolkit": "TIKTOK",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/tiktok"
+  },
+  {
+   "name": "TikTok Ads",
+   "slug": "tiktok-ads",
+   "toolkit": "TIKTOK_ADS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/tiktok_ads"
+  },
+  {
+   "name": "Timely",
+   "slug": "timely",
+   "toolkit": "TIMELY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/timely"
+  },
+  {
+   "name": "TinyFish MCP",
+   "slug": "tinyfish-mcp",
+   "toolkit": "TINYFISH_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/tinyfish_mcp"
+  },
+  {
+   "name": "Tipalti",
+   "slug": "tipalti",
+   "toolkit": "TIPALTI",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/tipalti"
+  },
+  {
+   "name": "Todoist",
+   "slug": "todoist",
+   "toolkit": "TODOIST",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/todoist"
+  },
+  {
+   "name": "Todoist MCP",
+   "slug": "todoist-mcp",
+   "toolkit": "TODOIST_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/todoist_mcp"
+  },
+  {
+   "name": "Toneden",
+   "slug": "toneden",
+   "toolkit": "TONEDEN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/toneden"
+  },
+  {
+   "name": "Trello",
+   "slug": "trello",
+   "toolkit": "TRELLO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/trello"
+  },
+  {
+   "name": "Trello MCP",
+   "slug": "trello-mcp",
+   "toolkit": "TRELLO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/trello_mcp"
+  },
+  {
+   "name": "Twilio",
+   "slug": "twilio",
+   "toolkit": "TWILIO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/twilio"
+  },
+  {
+   "name": "Twitch",
+   "slug": "twitch",
+   "toolkit": "TWITCH",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/twitch"
+  },
+  {
+   "name": "Twitter",
+   "slug": "twitter",
+   "toolkit": "TWITTER",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/twitter"
+  },
+  {
+   "name": "Typeform",
+   "slug": "typeform",
+   "toolkit": "TYPEFORM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/typeform"
+  },
+  {
+   "name": "Vantage MCP",
+   "slug": "vantage-mcp",
+   "toolkit": "VANTAGE_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vantage_mcp"
+  },
+  {
+   "name": "Vercel",
+   "slug": "vercel",
+   "toolkit": "VERCEL",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vercel"
+  },
+  {
+   "name": "Vercel MCP",
+   "slug": "vercel-mcp",
+   "toolkit": "VERCEL_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vercel_mcp"
+  },
+  {
+   "name": "Vibe",
+   "slug": "vibe",
+   "toolkit": "VIBE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vibe"
+  },
+  {
+   "name": "Vibe Prospecting MCP",
+   "slug": "vibe-prospecting-mcp",
+   "toolkit": "VIBE_PROSPECTING_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vibe_prospecting_mcp"
+  },
+  {
+   "name": "vidIQ MCP",
+   "slug": "vidiq-mcp",
+   "toolkit": "VIDIQ_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vidiq_mcp"
+  },
+  {
+   "name": "Vimeo",
+   "slug": "vimeo",
+   "toolkit": "VIMEO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/vimeo"
+  },
+  {
+   "name": "WakaTime",
+   "slug": "wakatime",
+   "toolkit": "WAKATIME",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/wakatime"
+  },
+  {
+   "name": "Webex",
+   "slug": "webex",
+   "toolkit": "WEBEX",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/webex"
+  },
+  {
+   "name": "Webflow",
+   "slug": "webflow",
+   "toolkit": "WEBFLOW",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/webflow"
+  },
+  {
+   "name": "WhatsApp",
+   "slug": "whatsapp",
+   "toolkit": "WHATSAPP",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/whatsapp"
+  },
+  {
+   "name": "Whop",
+   "slug": "whop",
+   "toolkit": "WHOP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/whop"
+  },
+  {
+   "name": "WildApricot",
+   "slug": "wild-apricot",
+   "toolkit": "WILD_APRICOT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/wild_apricot"
+  },
+  {
+   "name": "Wispr Flow MCP",
+   "slug": "wispr-flow-mcp",
+   "toolkit": "WISPR_FLOW_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/wispr_flow_mcp"
+  },
+  {
+   "name": "Wix",
+   "slug": "wix",
+   "toolkit": "WIX",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/wix"
+  },
+  {
+   "name": "Wix MCP",
+   "slug": "wix-mcp",
+   "toolkit": "WIX_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/wix_mcp"
+  },
+  {
+   "name": "WordPress.com",
+   "slug": "wordpress-com",
+   "toolkit": "WORDPRESS_COM",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/wordpress_com"
+  },
+  {
+   "name": "Workable",
+   "slug": "workable",
+   "toolkit": "WORKABLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/workable"
+  },
+  {
+   "name": "Workday",
+   "slug": "workday",
+   "toolkit": "WORKDAY",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/workday"
+  },
+  {
+   "name": "Workday Adaptive Planning",
+   "slug": "workday-adaptive-planning",
+   "toolkit": "WORKDAY_ADAPTIVE_PLANNING",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/workday_adaptive_planning"
+  },
+  {
+   "name": "Wrike",
+   "slug": "wrike",
+   "toolkit": "WRIKE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/wrike"
+  },
+  {
+   "name": "X MCP",
+   "slug": "x-mcp",
+   "toolkit": "X_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/x_mcp"
+  },
+  {
+   "name": "Xero",
+   "slug": "xero",
+   "toolkit": "XERO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/xero"
+  },
+  {
+   "name": "Yandex",
+   "slug": "yandex",
+   "toolkit": "YANDEX",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/yandex"
+  },
+  {
+   "name": "YNAB",
+   "slug": "ynab",
+   "toolkit": "YNAB",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/ynab"
+  },
+  {
+   "name": "YouTube",
+   "slug": "youtube",
+   "toolkit": "YOUTUBE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/youtube"
+  },
+  {
+   "name": "Zelt",
+   "slug": "zelt",
+   "toolkit": "ZELT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zelt"
+  },
+  {
+   "name": "Zendesk",
+   "slug": "zendesk",
+   "toolkit": "ZENDESK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zendesk"
+  },
+  {
+   "name": "Zeplin",
+   "slug": "zeplin",
+   "toolkit": "ZEPLIN",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zeplin"
+  },
+  {
+   "name": "Zernio MCP",
+   "slug": "zernio-mcp",
+   "toolkit": "ZERNIO_MCP",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zernio_mcp"
+  },
+  {
+   "name": "Zoho",
+   "slug": "zoho",
+   "toolkit": "ZOHO",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho"
+  },
+  {
+   "name": "Zoho Bigin",
+   "slug": "zoho-bigin",
+   "toolkit": "ZOHO_BIGIN",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_bigin"
+  },
+  {
+   "name": "Zoho Books",
+   "slug": "zoho-books",
+   "toolkit": "ZOHO_BOOKS",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_books"
+  },
+  {
+   "name": "Zoho Calendar",
+   "slug": "zoho-calendar",
+   "toolkit": "ZOHO_CALENDAR",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_calendar"
+  },
+  {
+   "name": "Zoho Campaigns",
+   "slug": "zoho-campaigns",
+   "toolkit": "ZOHO_CAMPAIGNS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_campaigns"
+  },
+  {
+   "name": "Zoho Desk",
+   "slug": "zoho-desk",
+   "toolkit": "ZOHO_DESK",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_desk"
+  },
+  {
+   "name": "Zoho Inventory",
+   "slug": "zoho-inventory",
+   "toolkit": "ZOHO_INVENTORY",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_inventory"
+  },
+  {
+   "name": "Zoho Invoice",
+   "slug": "zoho-invoice",
+   "toolkit": "ZOHO_INVOICE",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_invoice"
+  },
+  {
+   "name": "Zoho Mail",
+   "slug": "zoho-mail",
+   "toolkit": "ZOHO_MAIL",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_mail"
+  },
+  {
+   "name": "Zoho People",
+   "slug": "zoho-people",
+   "toolkit": "ZOHO_PEOPLE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_people"
+  },
+  {
+   "name": "Zoho Projects",
+   "slug": "zoho-projects",
+   "toolkit": "ZOHO_PROJECTS",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_projects"
+  },
+  {
+   "name": "Zoho Recruit",
+   "slug": "zoho-recruit",
+   "toolkit": "ZOHO_RECRUIT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_recruit"
+  },
+  {
+   "name": "Zoho Sign",
+   "slug": "zoho-sign",
+   "toolkit": "ZOHO_SIGN",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_sign"
+  },
+  {
+   "name": "Zoho WorkDrive",
+   "slug": "zoho-work-drive",
+   "toolkit": "ZOHO_WORK_DRIVE",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoho_work_drive"
+  },
+  {
+   "name": "Zoom",
+   "slug": "zoom",
+   "toolkit": "ZOOM",
+   "managed": true,
+   "composio_url": "https://docs.composio.dev/toolkits/zoom"
+  },
+  {
+   "name": "Zoom Team Chat",
+   "slug": "zoom-chat",
+   "toolkit": "ZOOM_CHAT",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoom_chat"
+  },
+  {
+   "name": "Zoominfo",
+   "slug": "zoominfo",
+   "toolkit": "ZOOMINFO",
+   "managed": false,
+   "composio_url": "https://docs.composio.dev/toolkits/zoominfo"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "composio-apm-oauth-guides",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OAuth launch guides for agent builders: a verified library plus a live research agent.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "node scripts/build-library.mjs",
+    "directory": "node scripts/build-directory.mjs",
+    "generate": "node --env-file=.env scripts/generate.mjs",
+    "check": "node scripts/check-guides.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0"
+  }
+}

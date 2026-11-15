@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-14",
+  "guides": {
+    "github": {
+      "sources": 25,
+      "found": 25,
+      "not_found": 0,
+      "unreadable": 0,
+      "issues": []
+    },
+    "gmail": {
+      "sources": 52,
+      "found": 51,
+      "not_found": 0,
+      "unreadable": 1,
+      "issues": [
+        {
+          "id": "s53",
+          "kind": "community",
+          "url": "https://tacsecurity.com/google-casa-cloud-application-security-assessment/",
+          "result": "unreadable"
+        }
+      ]
+    },
+    "hubspot": {
+      "sources": 56,
+      "found": 55,
+      "not_found": 0,
+      "unreadable": 1,
+      "issues": [
+        {
+          "id": "s55",
+          "kind": "community",
+          "url": "https://community.hubspot.com/t/new-marketplace-distribution-app-install-limits/139886",
+          "result": "unreadable"
+        }
+      ]
+    },
+    "linkedin": {
+      "sources": 37,
+      "found": 37,
+      "not_found": 0,
+      "unreadable": 0,
+      "issues": []
+    },
+    "notion": {
+      "sources": 25,
+      "found": 25,
+      "not_found": 0,
+      "unreadable": 0,
+      "issues": []
+    },
+    "slack": {
+      "sources": 34,
+      "found": 34,
+      "not_found": 0,
+      "unreadable": 0,
+      "issues": []
+    },
+    "xero": {
+      "sources": 44,
+      "found": 43,
+      "not_found": 1,
+      "unreadable": 0,
+      "issues": [
+        {
+          "id": "x18",
+          "kind": "official",
+          "url": "https://web.archive.org/web/20250709064509/https://developer.xero.com/page-data/documentation/guides/oauth2/limits/page-data.json",
+          "result": "not-found"
+        }
+      ]
+    }
+  }
+}

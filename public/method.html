@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works · OAuth Launch Guides</title>
+  <meta name="description" content="How the OAuth launch guides are researched, written and checked, and what the evidence labels mean.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1c1a'/%3E%3Ctext x='16' y='21' font-size='14' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3EOA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">OA</span>OAuth Launch Guides</a>
+    <nav class="nav"><a href="/">Library</a><a href="/method.html">How it works</a></nav>
+  </div></header>
+
+  <main class="wrap prose" style="padding-top:36px">
+    <h1>How the guides are made and checked</h1>
+    <p class="muted" style="margin-top:12px;font-size:17px">Every guide answers the same four questions in the same order, and says how sure it is about each answer.</p>
+
+    <h2>The four questions</h2>
+    <ul>
+      <li><b>Can I launch, and how long will it take?</b> Your hands-on time and the approval wait are shown separately. Most setups are an hour of work; the difference between "today" and "two months" is the wait.</li>
+      <li><b>Do I even need my own OAuth app?</b> Composio runs managed OAuth apps for many toolkits. If one exists, your users can connect today, and your own app is an upgrade for branding, scopes, rate limits or polling speed, not a launch blocker.</li>
+      <li><b>What exactly do I do, and who does each part?</b> Every step is tagged <span class="chip own-you">You</span>, <span class="chip own-agent">Agent can do</span> or <span class="chip own-provider">Provider wait</span>.</li>
+      <li><b>How sure is this?</b> Every step carries an evidence label, and every source has a verbatim quote.</li>
+    </ul>
+
+    <h2>Difficulty tiers</h2>
+    <p>Tiers are about what gates distribution to other people's accounts, not about how many steps there are.</p>
+    <ul>
+      <li><span class="chip tier-instant">Instant</span> Register and other accounts can connect the same day, with no review.</li>
+      <li><span class="chip tier-light-review">Light review</span> Works for your own account at once. Public distribution needs a short or optional review, a listing, or carries limits until reviewed.</li>
+      <li><span class="chip tier-formal-review">Formal review</span> Other accounts are blocked or capped until a formal verification, often with a demo video or a third-party security assessment. Weeks.</li>
+      <li><span class="chip tier-partner-gated">Partner gated</span> The useful API sits behind a partner programme application that can take months or be refused.</li>
+    </ul>
+
+    <h2>Evidence labels</h2>
+    <ul>
+      <li><span class="chip ev-tested">Tested</span> We ran something and saw the result. So far this means no-account probes, such as calling the authorize endpoint with a dummy client ID and recording the error. A docs read is never "tested".</li>
+      <li><span class="chip ev-sourced">Sourced</span> An official provider page or Composio doc says so. The verbatim quote is recorded in the Evidence section.</li>
+      <li><span class="chip ev-uncertain">Uncertain</span> Not confirmed by an official source. Treat it as a lead to check.</li>
+    </ul>
+    <p>Wait times are the hardest fact to source: providers rarely publish them. Each guide says whether its wait is <b>published by the provider</b>, <b>reported by developers</b> (with the source), or <b>our estimate</b>.</p>
+
+    <h2>Verified guides</h2>
+    <p>The library guides were researched by AI research agents working only from the providers' live official documentation, with an instruction to record a verbatim quote for every claim, label community sources, and list anything they could not confirm. Each was then checked: the format is validated by a script, quotes are re-fetched, and the research notes record what was corrected along the way. The notes for each app are in the <a href="https://github.com/kishlayamishra02/composio-apm-oauth-guides/tree/main/research" target="_blank" rel="noopener">source repository</a>.</p>
+
+    <h2>Live guides</h2>
+    <p>When you submit an app that has no verified guide, a research agent writes one, usually in one to three minutes:</p>
+    <ol>
+      <li><b>Identify.</b> Find the product, the provider's official domains and the developer portal, and whether it offers OAuth at all.</li>
+      <li><b>Investigate, in parallel.</b> Three grounded web investigations: registration and what works before approval; the approval process, its triggers and waits; and scopes, plans, rate limits and recent changes. Each finding must cite a page and quote it.</li>
+      <li><b>Check, then write.</b> Every cited page is fetched again and each quote is marked as found on the page or not. The guide is then written from those findings only, citing source ids: the headline, tier and approval answer may rest only on official quotes found on the page, and the model may not add facts from memory. Forums count as community sources even on the provider's own domain.</li>
+      <li><b>Check its own work.</b> Code, not the model, grades the evidence: a step is "sourced" only if it cites an official domain. The cited pages are fetched again to look for each quote, and the developer portal is probed. Steps whose quotes cannot be found are downgraded to uncertain.</li>
+    </ol>
+    <p>Live guides are labelled as unreviewed. They are a fast first draft of the path, not a replacement for the verified library.</p>
+
+    <h2>What this does not do yet</h2>
+    <ul>
+      <li>It has not registered real OAuth apps with providers. That needs developer accounts and is the next step for raising guides from "sourced" to "tested".</li>
+      <li>Provider rules change. Each guide shows the date it was checked; a scheduled re-check is not built yet.</li>
+      <li>Pages rendered by JavaScript cannot be quote-checked automatically and are marked "not machine-readable".</li>
+    </ul>
+    <p style="margin-top:28px"><a href="/">← Back to the library</a></p>
+  </main>
+  <footer class="foot"><div class="wrap">Built as a take-home prototype.</div></footer>
+</body>
+</html>

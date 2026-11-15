@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuth Launch Guides</title>
+  <meta name="description" content="OAuth app setup and approval guides for developers building AI agents: time, effort, requirements, blockers, and what an agent can do for you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1c1a'/%3E%3Ctext x='16' y='21' font-size='14' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3EOA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">OA</span>OAuth Launch Guides</a>
+    <nav class="nav"><a href="#library">Library</a><a href="#directory">All apps</a><a href="/method.html">How it works</a></nav>
+  </div></header>
+
+  <main>
+    <section class="hero"><div class="wrap">
+      <h1>Know how long your OAuth app will take<br>before you start.</h1>
+      <p class="lede">Look up an app your agent's users want to connect. You get a guide you can follow and share: whether you need your own OAuth app, how much work it is, how long approval takes, what can block you, and what an agent can do for you.</p>
+      <div class="search">
+        <form id="search-form" autocomplete="off">
+          <input id="q" name="q" type="text" placeholder="App name or website, e.g. Gmail or xero.com" aria-label="App name or website" maxlength="120" role="combobox" aria-expanded="false" aria-controls="suggest">
+          <button class="btn" type="submit">Get guide</button>
+        </form>
+        <ul class="suggest hidden" id="suggest" role="listbox"></ul>
+        <p class="hint">Try <button data-try="Gmail">Gmail</button>, <button data-try="LinkedIn">LinkedIn</button>, <button data-try="Xero">Xero</button>, or an app we have no guide for yet, like <button data-try="Calendly">Calendly</button>. The agent researches it live, usually in one to three minutes.</p>
+      </div>
+    </div></section>
+
+    <section class="block"><div class="wrap">
+      <div class="section-head"><div><h2>First question: do you need your own OAuth app at all?</h2><p>The OAuth app is what your users see on the consent screen. Composio runs one for many apps, so you may not need yours yet.</p></div></div>
+      <div class="explain">
+        <div class="card"><div class="num" id="n-managed">128</div><h3>Composio has a managed app</h3><p>Your users can connect today. Bring your own app later, when you want your brand on the consent screen, extra scopes, your own rate limits, or faster trigger polling.</p></div>
+        <div class="card"><div class="num" id="n-byo">287</div><h3>You must bring your own app</h3><p>No managed app exists, so registering one with the provider is on your launch path. These are where a guide saves the most time.</p></div>
+        <div class="card"><div class="num">4 tiers</div><h3>Approval is the real variable</h3><p>Registering an app takes minutes almost everywhere. The difference between an hour and two months is review: what triggers it, what reviewers want, and how long they take.</p></div>
+      </div>
+    </div></section>
+
+    <section class="block" id="library"><div class="wrap">
+      <div class="section-head"><div><h2>Verified guides</h2><p>Checked against the provider's official docs, with a quote for every source. Ordered from easiest to hardest.</p></div></div>
+      <div class="scale" id="scale"></div>
+      <div class="grid cols-3" id="lib" style="margin-top:14px"></div>
+    </div></section>
+
+    <section class="block hidden" id="recent-wrap"><div class="wrap">
+      <div class="section-head"><div><h2>Recently researched by the agent</h2><p>Written live from web research and checked automatically, not reviewed by a person.</p></div></div>
+      <div class="grid cols-4" id="recent"></div>
+    </div></section>
+
+    <section class="block" id="directory"><div class="wrap">
+      <div class="section-head"><div><h2>All OAuth apps on Composio</h2><p id="dir-sub">Every OAuth toolkit in Composio's catalog. Pick one to open its guide, or have the agent write one.</p></div></div>
+      <div class="dir-tools">
+        <input id="dir-q" type="search" placeholder="Filter apps" aria-label="Filter apps">
+        <div class="seg" role="group" aria-label="Filter by OAuth app owner">
+          <button class="on" data-f="all">All</button><button data-f="byo">Bring your own</button><button data-f="managed">Composio managed</button>
+        </div>
+      </div>
+      <div class="dir-list" id="dir"></div>
+      <div class="more"><button class="btn secondary small hidden" id="dir-more">Show more</button></div>
+    </div></section>
+  </main>
+
+  <footer class="foot"><div class="wrap">Built as a take-home prototype. App catalog from <a href="https://docs.composio.dev/toolkits/managed-auth" target="_blank" rel="noopener">Composio's managed OAuth apps page</a>. Guides describe provider processes as documented on the date shown. <a href="/method.html">How the guides are made and checked</a>.</div></footer>
+
+  <script type="module" src="/js/home.js"></script>
+</body>
+</html>

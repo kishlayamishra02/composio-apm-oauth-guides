@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuth guide · OAuth Launch Guides</title>
+  <meta name="description" content="How to set up and get approval for an OAuth app: time, effort, requirements, and what an agent can do for you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1c1a'/%3E%3Ctext x='16' y='21' font-size='14' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3EOA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">OA</span>OAuth Launch Guides</a>
+    <nav class="nav"><a href="/">Library</a><a href="/method.html">How it works</a></nav>
+  </div></header>
+  <main class="wrap" id="guide"><p class="muted" style="padding:40px 0">Loading guide…</p></main>
+  <footer class="foot"><div class="wrap">Guides describe provider processes as documented on the date shown. Providers change their rules; check the cited sources before you rely on a detail.</div></footer>
+  <script type="module">
+    import { renderGuide, wireGuide, esc } from '/js/render.js';
+    const root = document.getElementById('guide');
+    const path = location.pathname.replace(/\/+$/, '');
+    const [, kind, id] = path.split('/');
+    const url = kind === 'guide' ? `/data/guides/${encodeURIComponent(id)}.json` : kind === 'g' ? `/api/guides/${encodeURIComponent(id)}` : null;
+    try {
+      if (!url || !id) throw new Error('No guide in this link.');
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(res.status === 404 ? 'This guide does not exist (yet).' : `Could not load the guide (HTTP ${res.status}).`);
+      const g = await res.json();
+      document.title = `${g.app} OAuth setup and approval · OAuth Launch Guides`;
+      root.innerHTML = renderGuide(g, { id });
+      wireGuide(root, g, `${kind}/${id}`);
+      if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+    } catch (err) {
+      root.innerHTML = `<div class="alert err" style="margin-top:32px">${esc(err.message)} <a href="/">Back to the library</a> or <a href="/generate.html?q=${esc(encodeURIComponent(id || ''))}">ask the agent to research it</a>.</div>`;
+    }
+  </script>
+</body>
+</html>

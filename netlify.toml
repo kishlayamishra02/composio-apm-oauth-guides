@@ -1,0 +1,23 @@
+[build]
+  publish = "public"
+  command = "node scripts/build-library.mjs"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/guide/*"
+  to = "/guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/g/*"
+  to = "/guide.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

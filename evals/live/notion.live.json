@@ -1,0 +1,542 @@
+{
+  "slug": "notion",
+  "app": "Notion",
+  "provider": "Notion Labs, Inc.",
+  "website": "https://www.notion.com",
+  "developer_portal": "https://developers.notion.com",
+  "category": "Project management, Notes, Collaboration",
+  "origin": "live-agent",
+  "last_checked": "2026-11-14",
+  "one_liner": "You can launch privately today; public listing requires a security review, typically taking ~4.5 weeks.",
+  "verdict": {
+    "tier": "light-review",
+    "difficulty": 3,
+    "hands_on": "30–60 min",
+    "approval_wait": "~4.5 weeks",
+    "total_to_production": "Same day for private use, ~4.5 weeks for public listing",
+    "wait_basis": "community-reported",
+    "confidence": "low"
+  },
+  "start_today": {
+    "summary": "Developers can immediately configure client credentials and redirect URIs to authorize their Notion integration for private use without review.",
+    "limits_before_approval": [
+      "Free and Plus plans: 180 requests per minute per connection.",
+      "Business and Enterprise plans: 600 requests per minute per connection.",
+      "A per-workspace limit also applies."
+    ]
+  },
+  "composio": {
+    "managed_app": true,
+    "toolkit": "NOTION",
+    "note": "Composio offers a managed OAuth app for Notion, allowing developers to launch immediately without their own app, unless custom branding, extra scopes, dedicated rate limits, faster trigger polling, or self-hosting is required.",
+    "catalog_url": "https://docs.composio.dev/toolkits/managed-auth"
+  },
+  "prerequisites": [
+    {
+      "item": "Notion account",
+      "detail": "A Notion account is required to create and manage an integration.",
+      "cost": "varies",
+      "sources": []
+    },
+    {
+      "item": "Notion API usage is free",
+      "detail": "Using the Notion API itself is free; billing is based on the Notion plan (per-seat price), not on API calls.",
+      "cost": "free",
+      "sources": [
+        "s7"
+      ]
+    },
+    {
+      "item": "No self-hosted Notion",
+      "detail": "Notion is a hosted service and does not offer a self-hosted or on-premises edition.",
+      "cost": "free",
+      "sources": [
+        "s13"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Create Integration & Configure Credentials",
+      "duration": "15-30 min",
+      "steps": [
+        {
+          "text": "Create a new integration in your Notion workspace settings.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": []
+        },
+        {
+          "text": "Configure client credentials (Client ID, Client Secret) and redirect URIs for your integration.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Select the installation scope for your integration; choose 'Any workspace' to make it eligible for Marketplace listing and trigger a security review, or 'My workspace' for private use.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Implement & Test OAuth Flow",
+      "duration": "30-60 min",
+      "steps": [
+        {
+          "text": "Implement the OAuth 2.0 authorization flow in your application using the configured credentials.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Test the authorization process by connecting your Notion workspace to your integration.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Develop and test your AI agent's functionality using the Notion API.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "name": "Prepare for Public Listing (Optional)",
+      "duration": "Varies",
+      "steps": [
+        {
+          "text": "Ensure your integration adheres to Notion's security and operational guidelines, covering aspects like access controls, data handling, and API version contracts.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s4"
+          ]
+        },
+        {
+          "text": "Prepare any necessary documentation or assets for the Marketplace listing, such as a privacy policy or demo materials.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": []
+        },
+        {
+          "text": "Address potential rejection reasons like broken URLs, poor image quality, or low-value AI-generated content.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s5"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Submit for Review (Optional)",
+      "duration": "5-10 business days (official), ~4.5 weeks (community-reported)",
+      "steps": [
+        {
+          "text": "Ensure 'Any workspace' was selected as the installation scope during creation to trigger the security review for public listing.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s2"
+          ]
+        },
+        {
+          "text": "Wait for Notion's security review process to complete.",
+          "owner": "provider",
+          "evidence": "uncertain",
+          "sources": [
+            "s3"
+          ]
+        },
+        {
+          "text": "Respond to any feedback or requests from the Notion review team.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Launch & Monitor",
+      "duration": "Ongoing",
+      "steps": [
+        {
+          "text": "Launch your Notion integration for public use once approved and listed on the Marketplace.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s2"
+          ]
+        },
+        {
+          "text": "Monitor API usage and adhere to rate limits based on the Notion plan.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s8",
+            "s9"
+          ]
+        },
+        {
+          "text": "Stay updated on API changes, such as the deprecation of enhanced markdown v1 on October 30, 2026.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s11"
+          ]
+        }
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "scope": "legal-hold:read",
+      "purpose": "Read legal hold data.",
+      "review_impact": "review",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "scope": "user:read",
+      "purpose": "Read user information.",
+      "review_impact": "partner-only",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "scope": "permission-group:write",
+      "purpose": "Modify permission groups.",
+      "review_impact": "partner-only",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "scope": "write-high-impact",
+      "purpose": "Allows sensitive changes, such as revoking credentials or access.",
+      "review_impact": "security-assessment",
+      "sources": [
+        "s6"
+      ]
+    }
+  ],
+  "approval": {
+    "required": "for-public-distribution",
+    "trigger": "Selecting 'Any workspace' as the installation scope during integration creation.",
+    "reviewers_check": [
+      "Access controls",
+      "Data handling",
+      "API version contracts",
+      "Operational controls (limits, retries, webhooks)",
+      "Secret management"
+    ],
+    "typical_wait": "Around 24 business days (approximately 4.5 weeks), though official documentation states 5-10 business days.",
+    "common_rejections": [
+      "Broken URLs",
+      "Disabled duplication",
+      "Poor image quality",
+      "Incomplete content",
+      "AI-generated content with low value",
+      "Branding issues",
+      "Unsupported languages"
+    ],
+    "sources": [
+      "s2",
+      "s3",
+      "s4",
+      "s5"
+    ]
+  },
+  "blockers": [
+    {
+      "blocker": "Long and potentially silent wait times for security review for public listing.",
+      "fix": "Plan for extended review periods and proactively ensure all integration details align with Notion's security and quality expectations.",
+      "sources": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "blocker": "Uncertainty regarding specific documentation required for the Notion security review.",
+      "fix": "Prepare standard documentation like a privacy policy, terms of service, and a demo video, and be ready to provide additional information upon request.",
+      "sources": []
+    }
+  ],
+  "agent_split": {
+    "agent_can": [
+      "Draft the integration's description and purpose.",
+      "Suggest minimal necessary scopes based on desired functionality.",
+      "Prepare answers to common security review questions based on application architecture.",
+      "Check redirect URI settings for correctness.",
+      "Run a test OAuth flow once credentials are provided."
+    ],
+    "you_must": [
+      "Create the Notion integration and obtain client credentials.",
+      "Provide legal attestations (e.g., privacy policy URL, terms of service).",
+      "Make the final submission for Marketplace listing.",
+      "Address specific feedback from Notion's review team.",
+      "Manage your Notion account and associated billing."
+    ],
+    "provider_controls": [
+      "The security review process and approval decisions.",
+      "API rate limits and scope restrictions.",
+      "Availability of specific API features (e.g., Enterprise-only scopes)."
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/docs/authorization",
+      "kind": "official",
+      "quote": "You can start authorization as soon as you configure the integration's client credentials and redirect URI; Marketplace submission or review is not required.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s2",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/guides/connections-and-tokens/public-integrations/overview",
+      "kind": "official",
+      "quote": "Public connections must undergo a Notion security review before being listed on the Marketplace.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s3",
+      "title": "reddit.com",
+      "url": "https://www.reddit.com/r/Notion/comments/1uuqg0u/if_you_submitted_a_connection_to_the_notion/",
+      "kind": "community",
+      "quote": "Their docs say to expect a response within 5-10 business days.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s4",
+      "title": "vertexaisearch.cloud.google.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6kWdvG6gs-QR_N9VNhtMRP97v5vqo3aaEUko-kTFd6YYbQquadKYA3iCkY1Ek7iBly_kroGHziQP-69A7LCwA9vUBo3AFZc6y0YqLnMJ9RAgDUG5YRCpjXftHf6rNnl1wjg3H4e556VxkUEiRnF6Ocw==",
+      "kind": "community",
+      "quote": "Decide whether a Notion integration is ready for production from evidence across access, contracts, correctness, safety, and operations. ... Walk access, data, version, schema, operation, limit, retry, webhook, and destructive-action controls. ... Verify production secret provenance, workspace binding, minimum capabilities, shared roots, rotation, revocation, and break-glass custody.",
+      "accessed": "2026-11-14",
+      "quote_check": "unreadable"
+    },
+    {
+      "id": "s5",
+      "title": "youtube.com",
+      "url": "https://www.youtube.com/watch?v=Bf1JqIYAr_0",
+      "kind": "community",
+      "quote": "before we move on I want to cover a few reasons templates get rejected. the most common issues include broken or inaccessible URLs disabled duplication poor image quality incomplete content AI generated content with little other value branding issues and unsupported languages",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s6",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/reference/admin/scopes",
+      "kind": "official",
+      "quote": "Each scope combines a resource and a capability, such as legal-hold:read.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s7",
+      "title": "note.com",
+      "url": "https://note.com/ai_vibe_coding/n/n55047e7046b1?hl=en",
+      "kind": "community",
+      "quote": "Using the Notion API itself is free. There is no usage-based billing for the number of calls. Billing is based on the \"Notion plan (per-seat price),\" not on API calls.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s8",
+      "title": "superdupr.com",
+      "url": "https://superdupr.com/blog/notion-pricing",
+      "kind": "community",
+      "quote": "Notion AI is fully included only from Business up.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s9",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/reference/request-limits",
+      "kind": "official",
+      "quote": "The Notion API enforces two rate limits: a per-connection limit and a per-workspace limit.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s10",
+      "title": "felloai.com",
+      "url": "https://felloai.com/notion-ai-pricing/",
+      "kind": "community",
+      "quote": "In May 2025, Notion bundled AI into the Business and Enterprise tiers and removed the add-on for new Free and Plus customers.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s11",
+      "title": "notioncoach.com",
+      "url": "https://notioncoach.com/feed/notion-api-markdown-v2-migration",
+      "kind": "community",
+      "quote": "On October 30, 2026, Notion deprecated enhanced markdown (v1) and announced that its next Notion-Version will default to Notion-flavored Markdown (v2).",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s12",
+      "title": "notion.com",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "kind": "official",
+      "quote": "By default, neither Notion nor our AI providers use your Customer Data to train any models.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s13",
+      "title": "affine.pro",
+      "url": "https://affine.pro/blog/self-hosted-notion-alternative",
+      "kind": "community",
+      "quote": "Can I self-host Notion itself? No. Notion is a hosted service with no self-hosted or on-premises edition.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s14",
+      "title": "vertexaisearch.cloud.google.com",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF1napGWJly_LsgfP0QQswTeRX3QKWzUWB4cMIjWh-OeuEY3pK19MuBraZe9eO255emVieM_nqY1qt8i7aSiv4kBMoCNuBzCURHj3DictiUtPPbjGLhgdO0T5-LwRX3MRPqEB2HUli4Hx39zHJ9SWM_qNZs8sqz1Pr3MBolH2pOOTZcU9EFGg==",
+      "kind": "community",
+      "quote": "Notion's AI features rely on a regional indexing pipeline that prepares workspace content for use in AI-powered experiences. As with other data systems, this infrastructure respects data residency boundaries.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    }
+  ],
+  "tested": [
+    {
+      "what": "Developer portal responds: GET https://developers.notion.com",
+      "result": "HTTP 200 (redirected to https://developers.notion.com/guides/notion-api/quick-start)",
+      "date": "2026-11-14"
+    },
+    {
+      "what": "OAuth documentation responds: GET https://developers.notion.com/docs/authorization",
+      "result": "HTTP 200 (redirected to https://developers.notion.com/guides/authorization/overview)",
+      "date": "2026-11-14"
+    }
+  ],
+  "uncertain": [
+    "What specific documents (e.g., privacy policy URL, terms of service URL, demo video for integrations, security questionnaire, third-party security assessment, business verification) are explicitly required for the Notion security review for public integrations?",
+    "Are there any recertification or annual review requirements for Notion public integrations?",
+    "What happens to existing users of an integration if its marketplace listing is rejected or while it is under review?",
+    "2 quoted passage(s) were not found on the cited page when re-checked; those claims may be paraphrased or out of date.",
+    "The approval wait (~4.5 weeks) is reported by developers, not published by the provider."
+  ],
+  "agent": {
+    "model": "gemini-2.5-flash",
+    "discovery_notes": "Notion's Developer Platform was introduced in May 2026, offering tools for building agents, syncing data, and integrating with other services. OAuth integrations can be 'Public' or 'Internal' and require users to explicitly share pages or databases. The access token never expires, but the refresh token rotates with each refresh.",
+    "oauth": "yes",
+    "oauth_docs_url": "https://developers.notion.com/docs/authorization"
+  },
+  "evidence_stats": {
+    "steps": 15,
+    "sourced": 7,
+    "uncertain": 8,
+    "official_sources": 5,
+    "community_sources": 9,
+    "quotes_found": 7,
+    "quotes_not_found": 2,
+    "quotes_unreadable": 1
+  },
+  "research_trace": [
+    {
+      "facet": "register",
+      "queries": [
+        "Notion OAuth redirect URI localhost HTTPS",
+        "Notion OAuth access token lifetime expiry"
+      ],
+      "grounded": [
+        {
+          "title": "Notion API quickstart",
+          "url": "https://developers.notion.com"
+        },
+        {
+          "title": "Notion API authorization",
+          "url": "https://developers.notion.com/docs/authorization"
+        }
+      ],
+      "urlsRead": [
+        {
+          "url": "https://developers.notion.com",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        },
+        {
+          "url": "https://developers.notion.com/docs/authorization",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        }
+      ],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "review",
+      "queries": [
+        "Notion List on the Marketplace guide",
+        "Notion public integration approval process OR Notion integration marketplace review",
+        "Notion public integration security review requirements OR Notion integration approval checklist"
+      ],
+      "grounded": [
+        {
+          "title": "Notion API authorization",
+          "url": "https://developers.notion.com/docs/authorization"
+        },
+        {
+          "title": "Notion API quickstart",
+          "url": "https://developers.notion.com"
+        }
+      ],
+      "urlsRead": [
+        {
+          "url": "https://developers.notion.com/docs/authorization",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        },
+        {
+          "url": "https://developers.notion.com",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        }
+      ],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "limits",
+      "queries": [
+        "Notion API scopes permissions sensitive restricted",
+        "Notion API pricing plans tiers",
+        "Notion API rate limits new unreviewed apps",
+        "Notion API changelog updates deprecations last 18 months",
+        "Notion API data use policy AI model training",
+        "Notion API self-hosted regional sandbox instances"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    }
+  ]
+}

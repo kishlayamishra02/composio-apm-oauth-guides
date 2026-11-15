@@ -1,0 +1,580 @@
+{
+  "slug": "pipedrive",
+  "app": "Pipedrive",
+  "provider": "Pipedrive",
+  "website": "https://www.pipedrive.com",
+  "developer_portal": "https://www.pipedrive.com/en/developers",
+  "category": "CRM, Sales Management",
+  "origin": "live-agent",
+  "last_checked": "2026-11-14",
+  "one_liner": "Developers can launch private apps immediately; public apps require Pipedrive approval, which adds an unknown wait time.",
+  "verdict": {
+    "tier": "light-review",
+    "difficulty": 3,
+    "hands_on": "30–60 min",
+    "approval_wait": "Unknown",
+    "total_to_production": "Same day for private apps, unknown for public apps.",
+    "wait_basis": "estimate",
+    "confidence": "medium"
+  },
+  "start_today": {
+    "summary": "Developers can register an app in the Developer Hub using a free sandbox account, obtain credentials, and develop/test private apps without approval.",
+    "limits_before_approval": [
+      "Developer sandbox accounts are limited to 5 seats by default.",
+      "Public apps require an approval process to connect other customers' accounts.",
+      "Before app approval, developers can install and test their app.",
+      "Private apps can be shared directly without approval."
+    ]
+  },
+  "composio": {
+    "managed_app": false,
+    "toolkit": "PIPEDRIVE",
+    "note": "Composio does not provide a managed OAuth app for Pipedrive. Developers must register their own OAuth app in the Pipedrive Developer Hub to integrate with the toolkit.",
+    "catalog_url": "https://docs.composio.dev/toolkits/managed-auth"
+  },
+  "prerequisites": [
+    {
+      "item": "Pipedrive developer sandbox account",
+      "detail": "Required to access the Developer Hub and manage OAuth credentials.",
+      "cost": "free",
+      "sources": [
+        "s2",
+        "s18"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Setup Developer Environment",
+      "duration": "15-30 minutes",
+      "steps": [
+        {
+          "text": "Create a free Pipedrive developer sandbox account.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s2",
+            "s18"
+          ]
+        },
+        {
+          "text": "Access the Pipedrive Developer Hub using the sandbox account.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s1",
+            "s2",
+            "s18"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Register OAuth App",
+      "duration": "15-30 minutes",
+      "steps": [
+        {
+          "text": "Choose to create either a 'Public app' for the Marketplace or a 'Private app' for selected users.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s3"
+          ]
+        },
+        {
+          "text": "Provide the App name and OAuth Callback URL (Redirect URI) in the Developer Hub.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s4"
+          ]
+        },
+        {
+          "text": "Ensure the OAuth Callback URL is an exact match; `http://localhost` is allowed for local development.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s5"
+          ]
+        },
+        {
+          "text": "Save the app configuration to receive Client ID and Client Secret.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s4"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Develop and Test",
+      "duration": "Varies",
+      "steps": [
+        {
+          "text": "Install and test your app within the sandbox environment.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s7"
+          ]
+        },
+        {
+          "text": "Implement OAuth authorization flow, handling 60-minute access token expiry and refresh tokens.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s6"
+          ]
+        },
+        {
+          "text": "Select necessary scopes to limit app access to user data; `base` is always enabled.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s11"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Distribute (Private Apps)",
+      "duration": "Immediate",
+      "steps": [
+        {
+          "text": "Share the private app with any Pipedrive company via a direct, unlisted installation link.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s3",
+            "s9"
+          ]
+        },
+        {
+          "text": "Note that private apps do not require the app approval process.",
+          "owner": "provider",
+          "evidence": "sourced",
+          "sources": [
+            "s3",
+            "s9"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Submit for Approval (Public Apps)",
+      "duration": "Varies",
+      "steps": [
+        {
+          "text": "Prepare a Privacy Policy and Terms of Service webpage for public apps.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s7",
+            "s8"
+          ]
+        },
+        {
+          "text": "Submit the public app for listing in the Pipedrive Marketplace, triggering the approval process.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s8"
+          ],
+          "note": "Quoted text was not found on the cited page."
+        },
+        {
+          "text": "Await review and approval by Pipedrive.",
+          "owner": "provider",
+          "evidence": "uncertain",
+          "sources": [
+            "s8"
+          ],
+          "note": "Quoted text was not found on the cited page."
+        }
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "scope": "base",
+      "purpose": "Access to basic information, read user settings and currencies.",
+      "review_impact": "none",
+      "sources": [
+        "s11"
+      ]
+    },
+    {
+      "scope": "admin",
+      "purpose": "Administer account (pipelines, stages, fields, activity types, users, permissions).",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "mail:read",
+      "purpose": "Read mail threads.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "mail:full",
+      "purpose": "Read, update, and delete mail threads.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "contacts:full",
+      "purpose": "Create, update, and delete people and organizations.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "deals:full",
+      "purpose": "Create, update, and delete deals.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "users:read",
+      "purpose": "Read user data, permissions, and roles.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    },
+    {
+      "scope": "webhooks:full",
+      "purpose": "Manage webhooks.",
+      "review_impact": "review",
+      "sources": [
+        "s12"
+      ]
+    }
+  ],
+  "approval": {
+    "required": "for-public-distribution",
+    "trigger": "Submission of a public app for listing in the Pipedrive Marketplace.",
+    "reviewers_check": [
+      "Privacy Policy and Terms of Service webpage"
+    ],
+    "typical_wait": "Unknown",
+    "common_rejections": [],
+    "sources": [
+      "s3",
+      "s7",
+      "s8",
+      "s9"
+    ]
+  },
+  "blockers": [
+    {
+      "blocker": "OAuth Callback URL must be an exact match.",
+      "fix": "Ensure the registered OAuth Callback URL precisely matches the URL used in the authorization request.",
+      "sources": [
+        "s5"
+      ]
+    },
+    {
+      "blocker": "Access tokens expire after 60 minutes.",
+      "fix": "Implement refresh token mechanism to obtain new access tokens.",
+      "sources": [
+        "s6"
+      ]
+    },
+    {
+      "blocker": "Public apps require a Privacy Policy and Terms of Service.",
+      "fix": "Create and host these legal documents before submitting a public app.",
+      "sources": [
+        "s7",
+        "s8"
+      ]
+    }
+  ],
+  "agent_split": {
+    "agent_can": [
+      "Draft the privacy policy or app description.",
+      "Pick minimal scopes.",
+      "Prepare review answers.",
+      "Check redirect URI settings.",
+      "Run a test OAuth flow once credentials exist."
+    ],
+    "you_must": [
+      "Create a Pipedrive developer sandbox account.",
+      "Choose between a public or private app.",
+      "Provide the App name.",
+      "Host the Privacy Policy and Terms of Service webpages for public apps.",
+      "Submit the public app for approval."
+    ],
+    "provider_controls": [
+      "Issue Client ID and Client Secret.",
+      "Review and approve public apps.",
+      "Manage token-based rate limits."
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/developer-hub",
+      "kind": "official",
+      "quote": "Developer Hub, formerly Marketplace Manager, is a tool for creating and maintaining your app in the Pipedrive Marketplace.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s2",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+      "kind": "official",
+      "quote": "Our developer sandbox account is essentially like a regular Pipedrive company account. These accounts provide app developers with a safe development and testing environment and are limited to 5 seats by default.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s3",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/creating-an-app",
+      "kind": "official",
+      "quote": "You can create two main types of apps depending on your app's purpose and intended users.",
+      "quote_check": "unreadable",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s4",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/registering-a-public-app",
+      "kind": "official",
+      "quote": "This tab has two required fields – App name and OAuth Callback URL.",
+      "quote_check": "unreadable",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s5",
+      "title": "nango.dev",
+      "url": "https://nango.dev/docs/api-integrations/pipedrive/how-to-register-your-own-pipedrive-api-oauth-app",
+      "kind": "community",
+      "quote": "For local development, you may also need to add: http://localhost:3003/oauth/callback.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s6",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/oauth-authorization",
+      "kind": "official",
+      "quote": "The new access token you need to use for accessing the user's data via API. access_token expires after 60 minutes. [...] The refresh token which is needed when you refresh the access_token.",
+      "quote_check": "unreadable",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s7",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/app-approval-process",
+      "kind": "official",
+      "quote": "Install and test your app to see how it works.",
+      "quote_check": "unreadable",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s8",
+      "title": "developers.pipedrive.com",
+      "url": "https://developers.pipedrive.com/docs/marketplace/app-approval-process",
+      "kind": "official",
+      "quote": "Each new public app submitted to the Pipedrive Marketplace has to pass our approval process to ensure the standards of quality and reliability that our customers (the salespeople) expect.",
+      "quote_check": "not-found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s9",
+      "title": "developers.pipedrive.com",
+      "url": "https://developers.pipedrive.com/docs/marketplace/creating-an-app",
+      "kind": "official",
+      "quote": "Private apps are not published in the Pipedrive Marketplace and do not have a listing/landing page; The app doesn't have to go through the app approval process.",
+      "quote_check": "not-found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s10",
+      "title": "ideaproof.com",
+      "url": "https://ideaproof.com/marketplace/pipedrive",
+      "kind": "community",
+      "quote": "Almost every directory asks for the same nine things: product name, URL, a 60-character tagline, a 250-character short description, a long description, logo (square, 512px), 3–5 screenshots, pricing model and category.",
+      "quote_check": "unreadable",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s11",
+      "title": "pipedrive.readme.io",
+      "url": "https://pipedrive.readme.io/docs/marketplace-scopes-and-permissions-explanations",
+      "kind": "official",
+      "quote": "Every time you create an app for the Pipedrive Marketplace, you'll need to determine what kind of user-related data you need access to. We use scopes for that. Scopes are used to limit an app's access to user-related data and they'll let you specify exactly what kind of access you need. [...] base, Access to basic information Read the settings of the authorized user and currencies in an account. ⚠",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s12",
+      "title": "nhimg.org",
+      "url": "https://nhimg.org/pipedrive-security-guide",
+      "kind": "community",
+      "quote": "Marketplace app OAuth scopes * admin : 'Administer account': manages pipelines, stages, fields, activity types, users and permissions. [...] * mail:read and mail:full : read, and in the full scope update and delete, mail threads. [...] * contacts:full and deals:full : create, update and delete people, organisations and deals. [...] * users:read : reads user data, permissions and roles, useful to a",
+      "quote_check": "not-found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s13",
+      "title": "frontal.so",
+      "url": "https://frontal.so/gtm-apis/crm-apis/pipedrive-api-review",
+      "kind": "community",
+      "quote": "Is the Pipedrive API free? No. No free tier. [...] The Pipedrive API is free in the sense that matters: no per-call charge, no credit balance, API access on every paid seat.",
+      "quote_check": "not-found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s14",
+      "title": "developers.pipedrive.com",
+      "url": "https://developers.pipedrive.com/changelog/post/breaking-changes-token-based-rate-limits-for-api-requests",
+      "kind": "official",
+      "quote": "December 2nd, 2024: Token-based rate limits will apply to all new signups. [...] May 31st, 2025: The rollout will be complete, and all existing customers will be subject to the new limits.",
+      "quote_check": "not-found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s15",
+      "title": "forgex.ai",
+      "url": "https://forgex.ai/news/pipedrive-moves-deprecated-api-v1-endpoints-out-of-support",
+      "kind": "community",
+      "quote": "Pipedrive's developer changelog says deprecated API v1 endpoints for activities, deals, persons, organizations, products, pipelines, stages and search are out of support from August 1, 2026, with fixes going only to API v2.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s16",
+      "title": "legalreview.ai",
+      "url": "https://www.legalreview.ai/vendors/pipedrive.com",
+      "kind": "community",
+      "quote": "Pipedrive expanded the permitted uses of Google User Data to include AI-powered productivity features such as email summarisation, meeting preparation, and contextual recommendations (Additional Limits on Use of Your Google User Data, Section 4.9).",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s17",
+      "title": "pipedrive.com",
+      "url": "https://www.pipedrive.com/en/ai-for-everyone",
+      "kind": "official",
+      "quote": "You initiate every AI interaction, review inputs and outputs and maintain complete visibility over your AI-generated content. You also get to edit any AI suggestion before using it and have the option to disable any AI feature that doesn't serve your needs.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "s18",
+      "title": "developers.apideck.com",
+      "url": "https://developers.apideck.com/apis/crm/pipedrive/configuration",
+      "kind": "community",
+      "quote": "A Pipedrive Developer Sandbox account - You need to create a separate Developer Sandbox account to manage OAuth credentials. OAuth app management (Developer Hub) is only available in Sandbox accounts, not in production accounts.",
+      "quote_check": "found",
+      "accessed": "2026-11-14"
+    }
+  ],
+  "tested": [
+    {
+      "what": "Developer portal responds: GET https://www.pipedrive.com/en/developers",
+      "result": "HTTP 404",
+      "date": "2026-11-14"
+    },
+    {
+      "what": "OAuth documentation responds: GET https://developers.pipedrive.com/docs/api/oauth",
+      "result": "HTTP 404",
+      "date": "2026-11-14"
+    }
+  ],
+  "uncertain": [
+    "Is PKCE (Proof Key for Code Exchange) supported or required for Pipedrive OAuth apps?",
+    "Are there specific requirements for the app's homepage URL or support email beyond being present for public apps?",
+    "Is there a specific limit on the number of test users or connections for public apps before approval, beyond the 5-seat sandbox limit?",
+    "Are there any specific prerequisites like verified domain or business verification that block initial app registration, or are these only part of the full approval process for public apps?",
+    "What are the published timelines or SLAs for the app approval process from Pipedrive?",
+    "Are there any real-world wait times reported by developers in forums or community posts?",
+    "Is there a recertification or annual review process for approved apps?",
+    "What happens to existing users of an app while it is under review or if it is rejected?",
+    "Are there any specific sensitive or restricted scopes that are partner-only?",
+    "Are there any lower rate limits specifically for new, unreviewed, or unlisted apps beyond the general token budget and burst limits?",
+    "Are there any specific data-use rules that prohibit using API data to train AI models, beyond the general terms of service and AI functionality statements?",
+    "How to ensure API calls from a sandbox account consistently target the sandbox environment and not the live environment, given that both might use the same URL?",
+    "3 quoted passage(s) were not found on the cited page when re-checked; those claims may be paraphrased or out of date.",
+    "The approval wait (Unknown) is an estimate."
+  ],
+  "agent": {
+    "model": "gemini-2.5-flash",
+    "discovery_notes": "OAuth 2.0 is the recommended authorization protocol for public apps in the Pipedrive Marketplace, while personal API tokens can be used for rapid prototyping or basic automation.",
+    "oauth": "yes",
+    "oauth_docs_url": "https://developers.pipedrive.com/docs/api/oauth"
+  },
+  "evidence_stats": {
+    "steps": 14,
+    "sourced": 11,
+    "uncertain": 3,
+    "official_sources": 11,
+    "community_sources": 7,
+    "quotes_found": 5,
+    "quotes_not_found": 3,
+    "quotes_unreadable": 4
+  },
+  "research_trace": [
+    {
+      "facet": "register",
+      "queries": [
+        "Pipedrive register OAuth app",
+        "Pipedrive developer account requirements",
+        "Pipedrive app types",
+        "Pipedrive OAuth app required fields",
+        "Pipedrive OAuth credentials",
+        "Pipedrive app review process",
+        "Pipedrive app testing before approval",
+        "Pipedrive developer portal",
+        "Pipedrive app submission guidelines"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search-only"
+    },
+    {
+      "facet": "review",
+      "queries": [
+        "Pipedrive OAuth app approval process",
+        "Pipedrive app review process",
+        "Pipedrive marketplace app submission requirements",
+        "Pipedrive sensitive scopes approval"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "limits",
+      "queries": [
+        "Pipedrive API scopes permissions",
+        "Pipedrive API pricing plans",
+        "Pipedrive API rate limits",
+        "Pipedrive API changes last 18 months",
+        "Pipedrive API data usage policy AI",
+        "Pipedrive sandbox environment API"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    }
+  ]
+}

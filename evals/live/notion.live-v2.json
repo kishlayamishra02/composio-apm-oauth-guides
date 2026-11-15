@@ -1,0 +1,537 @@
+{
+  "slug": "notion",
+  "app": "Notion",
+  "provider": "Notion Labs, Incorporated",
+  "website": "https://www.notion.com",
+  "developer_portal": "https://developers.notion.com",
+  "category": "Project management, Productivity, Notes",
+  "origin": "live-agent",
+  "last_checked": "2026-11-14",
+  "one_liner": "Developers can launch internal integrations instantly. Public integrations require Notion review and approval before other workspaces can connect, with an unknown wait time.",
+  "verdict": {
+    "tier": "light-review",
+    "difficulty": 3,
+    "hands_on": "30–60 min",
+    "approval_wait": "Unknown",
+    "total_to_production": "Unknown",
+    "wait_basis": "estimate",
+    "confidence": "low"
+  },
+  "start_today": {
+    "summary": "Developers can create and use 'internal integrations' immediately within their own Notion workspace. These do not require Notion review or approval.",
+    "limits_before_approval": [
+      "Public integrations cannot be used by other Notion workspaces until they have been submitted for review and approved by Notion.",
+      "The Authorization URL for a public connection is not available until after it has been submitted for review.",
+      "Notion API rate limits are tiered: 180 requests per minute per connection for Free and Plus plans, and 600 requests per minute per connection for Business and Enterprise plans. It is uncertain if these limits apply to unreviewed public integrations."
+    ]
+  },
+  "composio": {
+    "managed_app": true,
+    "toolkit": "NOTION",
+    "note": "Composio provides a managed OAuth app for Notion, allowing developers to launch immediately. A custom app is needed for custom branding on the consent screen, extra scopes, dedicated rate limits, faster trigger polling, or self-hosted instances.",
+    "catalog_url": "https://docs.composio.dev/toolkits/managed-auth"
+  },
+  "prerequisites": [
+    {
+      "item": "Standard Notion account",
+      "detail": "A standard Notion account is required to create an integration.",
+      "cost": "free",
+      "sources": [
+        "s2"
+      ]
+    },
+    {
+      "item": "Workspace owner role",
+      "detail": "The user creating the integration must be a Workspace owner to access the 'Connections' tab and create integrations.",
+      "cost": "varies",
+      "sources": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Create Notion Integration",
+      "duration": "15-30 min",
+      "steps": [
+        {
+          "text": "Visit the Notion Developer portal's 'My integrations' page.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Click the '+ New integration' button.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s1"
+          ]
+        },
+        {
+          "text": "Select 'Public' as the integration type.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s3"
+          ]
+        },
+        {
+          "text": "Provide a Connection name and Icon, specify a development workspace, and enter Redirect URI(s).",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s3"
+          ]
+        },
+        {
+          "text": "Enter your Company name, Website, Privacy policy URL, and Terms of service URL.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s3"
+          ]
+        },
+        {
+          "text": "Retrieve your OAuth Client ID and Client Secret from the Configuration tab after creation.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s5"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Implement OAuth Flow",
+      "duration": "30-60 min",
+      "steps": [
+        {
+          "text": "Implement the Authorization Code Grant flow, including Proof Key for Code Exchange (PKCE) parameters.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s6"
+          ]
+        },
+        {
+          "text": "Handle short-lived access tokens (1 hour expiry) and long-lived refresh tokens (1 year expiry).",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s7"
+          ]
+        },
+        {
+          "text": "Implement refresh token rotation, where each successful refresh returns a new access token and a new refresh token, invalidating the previous refresh token.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s7"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Submit for Review",
+      "duration": "5-10 min",
+      "steps": [
+        {
+          "text": "Submit the public integration for Notion's review.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s5"
+          ]
+        },
+        {
+          "text": "Wait for Notion's approval before other workspaces can connect to your integration.",
+          "owner": "provider",
+          "evidence": "sourced",
+          "sources": [
+            "s5"
+          ]
+        },
+        {
+          "text": "Note that the Authorization URL field will populate only after the public connection is submitted for review.",
+          "owner": "provider",
+          "evidence": "uncertain",
+          "sources": [
+            "s8"
+          ],
+          "note": "Quoted text was not found on the cited page."
+        }
+      ]
+    },
+    {
+      "name": "Manage Permissions and Rate Limits",
+      "duration": "Ongoing",
+      "steps": [
+        {
+          "text": "Instruct users to manually share specific pages or databases with your connection to grant API permissions, as Notion's API permissions are primarily managed this way rather than explicit OAuth scopes.",
+          "owner": "you",
+          "evidence": "uncertain",
+          "sources": [
+            "s8"
+          ],
+          "note": "Quoted text was not found on the cited page."
+        },
+        {
+          "text": "Monitor and adhere to Notion's API rate limits, which include a per-connection limit and a separate per-workspace limit, with some endpoints having specific limits.",
+          "owner": "you",
+          "evidence": "sourced",
+          "sources": [
+            "s13"
+          ]
+        }
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "scope": "General data access",
+      "purpose": "Accessing user data (pages, databases, etc.)",
+      "review_impact": "none",
+      "sources": [
+        "s8"
+      ]
+    },
+    {
+      "scope": "legal-hold:read",
+      "purpose": "Read legal hold information (Admin API)",
+      "review_impact": "partner-only",
+      "sources": [
+        "s10"
+      ]
+    },
+    {
+      "scope": "permission-group:write",
+      "purpose": "Write to permission groups (Admin API)",
+      "review_impact": "partner-only",
+      "sources": [
+        "s10"
+      ]
+    }
+  ],
+  "approval": {
+    "required": "for-public-distribution",
+    "trigger": "Submission of a public integration for review. The Authorization URL becomes available after this submission.",
+    "reviewers_check": [
+      "Connection name and Icon (what users see on the consent screen)",
+      "Type: Public",
+      "Development workspace",
+      "Redirect URI(s)",
+      "Connection capabilities",
+      "Company name",
+      "Website",
+      "Privacy policy URL",
+      "Terms of service URL"
+    ],
+    "typical_wait": "Unknown",
+    "common_rejections": [],
+    "sources": [
+      "s3",
+      "s5",
+      "s8"
+    ]
+  },
+  "blockers": [
+    {
+      "blocker": "Public integrations cannot be used by other workspaces until approved by Notion.",
+      "fix": "Submit the integration for review and await Notion's approval.",
+      "sources": [
+        "s5"
+      ]
+    },
+    {
+      "blocker": "The Authorization URL is not available until after the public connection is submitted for review.",
+      "fix": "Complete the integration setup and submit it for review to obtain the Authorization URL.",
+      "sources": [
+        "s8"
+      ]
+    },
+    {
+      "blocker": "Redirect URIs must use HTTPS, except for loopback hosts (http://localhost, 127.0.0.1, or [::1]) for local development. Any other redirect URI must exactly match the one provided in the authorization request.",
+      "fix": "Ensure all production redirect URIs use HTTPS and match exactly. Use loopback hosts only for local development.",
+      "sources": [
+        "s4"
+      ]
+    }
+  ],
+  "agent_split": {
+    "agent_can": [
+      "Draft the app description (Connection name and Icon) based on the agent's purpose.",
+      "Check redirect URI settings for compliance with Notion's requirements.",
+      "Run a test OAuth flow once credentials are obtained.",
+      "Prepare answers for review questions related to connection capabilities."
+    ],
+    "you_must": [
+      "Be a Notion Workspace owner to create integrations.",
+      "Provide legal attestations such as Company name, Website, Privacy policy URL, and Terms of service URL.",
+      "Manually submit the public integration for Notion's review.",
+      "Manually share Notion pages or databases with the connection to grant API permissions."
+    ],
+    "provider_controls": [
+      "Approval of public integrations.",
+      "Generation of Client ID and Client Secret.",
+      "Availability of the Authorization URL (after submission for review).",
+      "Enforcement of API rate limits.",
+      "Security review process for public OAuth apps."
+    ]
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "title": "stackscout.net",
+      "url": "https://www.stackscout.net/articles/cc_20260628_173053.html",
+      "kind": "community",
+      "quote": "You can create an integration by visiting My integrations and clicking the \"+ New integration\" button.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s2",
+      "title": "notion.com",
+      "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api",
+      "kind": "official",
+      "quote": "Only Workspace owners will be able to access the Connections tab and create integrations.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s3",
+      "title": "r28-ai-inc.mintlify.app",
+      "url": "https://r28-ai-inc.mintlify.app/charter/auth/apps/notion",
+      "kind": "community",
+      "quote": "Connection name and Icon: what your users see on the consent screen. Type: Public. [...] Company name, Website, and the privacy policy and terms links further down: Notion requires them for a public integration and shows them to your users.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s4",
+      "title": "help.notiondesk.so",
+      "url": "https://help.notiondesk.so/en/articles/notiondesk-api-oauth",
+      "kind": "community",
+      "quote": "Use https , or http on a loopback host: 127.0.0.1 , localhost or [::1] . [...] Any other redirect must match exactly.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s5",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/guides/connections-and-tokens/public-integrations/overview",
+      "kind": "official",
+      "quote": "After creation, visit the Configuration tab to retrieve your OAuth client ID and OAuth client secret.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s6",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/workers/guides/oauth",
+      "kind": "official",
+      "quote": "Workers always sends Proof Key for Code Exchange (PKCE) parameters. The authorization request includes an S256 code challenge, and the token exchange includes the matching code verifier.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s7",
+      "title": "nango.dev",
+      "url": "https://nango.dev/blog/notion-oauth-refresh-token-invalid-grant/",
+      "kind": "community",
+      "quote": "Notion rotates refresh tokens: each successful refresh returns a new access token and a new refresh token, and the previous refresh token is invalidated.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s8",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "kind": "official",
+      "quote": "The Authorization URL field populates after a public connection is submitted for review",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s9",
+      "title": "note.com",
+      "url": "https://note.com/o_m_g_da_yo/n/n02a635910e80?hl=en",
+      "kind": "community",
+      "quote": "Wait for review (1–3 days, sometimes several weeks)",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s10",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/reference/admin/scopes",
+      "kind": "official",
+      "quote": "Admin API scopes control an organization bot token's access. ... The user and permission-group scopes are available only to eligible Enterprise organizations.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-found"
+    },
+    {
+      "id": "s11",
+      "title": "superdupr.com",
+      "url": "https://superdupr.com/blog/notion-pricing",
+      "kind": "community",
+      "quote": "Notion's developer docs give each connection 600 requests per minute on Business and Enterprise and 180 per minute on all other plans.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s12",
+      "title": "notion.com",
+      "url": "https://www.notion.com/pricing",
+      "kind": "official",
+      "quote": "Custom Agents. AI agents handle repetitive tasks autonomously, so your team doesn't have to. Free to try, then $10 per 1,000 monthly Notion credits.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s13",
+      "title": "developers.notion.com",
+      "url": "https://developers.notion.com/reference/request-limits",
+      "kind": "official",
+      "quote": "The Notion API enforces two rate limits: a per-connection limit and a per-workspace limit. Some endpoints also have their own limit.",
+      "accessed": "2026-11-14",
+      "quote_check": "found"
+    },
+    {
+      "id": "s14",
+      "title": "notioncoach.com",
+      "url": "https://notioncoach.com/feed/notion-api-markdown-v2-migration",
+      "kind": "community",
+      "quote": "On October 30, 2026, Notion deprecated enhanced markdown (v1) and announced that its next Notion-Version will default to Notion-flavored Markdown (v2).",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    },
+    {
+      "id": "s15",
+      "title": "notion.com",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "kind": "official",
+      "quote": "By default, neither Notion nor our AI providers use your Customer Data to train any models. Our contracts with AI providers prohibit them from using your data to train their models.",
+      "accessed": "2026-11-14",
+      "quote_check": "not-checked"
+    }
+  ],
+  "tested": [
+    {
+      "what": "Developer portal responds: GET https://developers.notion.com",
+      "result": "HTTP 200 (redirected to https://developers.notion.com/guides/notion-api/quick-start)",
+      "date": "2026-11-14"
+    },
+    {
+      "what": "OAuth documentation responds: GET https://developers.notion.com/guides/get-started/authorization",
+      "result": "HTTP 200 (redirected to https://developers.notion.com/guides/authorization/overview)",
+      "date": "2026-11-14"
+    }
+  ],
+  "uncertain": [
+    "Is there a specific limit on the number of test users or connections for a public integration before it is approved?",
+    "Are there shorter token expiry durations in a 'test mode' or before approval for public integrations?",
+    "Are there specific requirements for company verification, verified domains, or business verification beyond providing the URLs, as part of the submission or approval process for public integrations, or is a minimum Notion plan (e.g., paid plan) required to create or submit a public integration for review?",
+    "What specific documentation (e.g., demo video, test account, security questionnaire, third-party security assessment) is required for the Notion security review of public OAuth apps, beyond the privacy policy and terms of service URLs?",
+    "Are there published timelines or SLAs for the security review of public OAuth apps, distinct from Marketplace listing reviews?",
+    "Are there recertification requirements (e.g., annual reviews) for Notion OAuth apps or Marketplace listings?",
+    "What happens to existing users of an OAuth app or Marketplace listing while it is under review or if it is rejected?",
+    "Are there specific 'sensitive' or 'restricted' OAuth scopes for public integrations, beyond the general page-sharing and capability toggles, similar to the Admin API scopes for organization bots?",
+    "Are there lower rate limits specifically for new, unreviewed, or unlisted apps, or do all Free/Plus apps start at 180 req/min and Business/Enterprise at 600 req/min regardless of review status?",
+    "What specific documentation (e.g., privacy policy, terms of service, demo video, test account, security questionnaire, third-party security assessment, business verification) is required for the Notion security review of public OAuth apps?",
+    "5 quoted passage(s) were not found on the cited page when re-checked; those claims may be paraphrased or out of date.",
+    "The approval wait (Unknown) is an estimate."
+  ],
+  "agent": {
+    "model": "gemini-2.5-flash",
+    "discovery_notes": "Notion's Developer Platform, introduced in May 2026, supports OAuth 2.0 for public integrations and offers additional features like Workers and External Agents. [cite:search_1, 2, 3, 4] Basic API access is available on the Free plan, while advanced features require Business or Enterprise plans. [cite:search_2]",
+    "oauth": "yes",
+    "oauth_docs_url": "https://developers.notion.com/guides/get-started/authorization"
+  },
+  "evidence_stats": {
+    "steps": 14,
+    "sourced": 5,
+    "uncertain": 9,
+    "official_sources": 8,
+    "community_sources": 7,
+    "quotes_found": 5,
+    "quotes_not_found": 5,
+    "quotes_unreadable": 0
+  },
+  "research_trace": [
+    {
+      "facet": "register",
+      "queries": [
+        "Notion developer portal create integration",
+        "Notion internal vs public integrations",
+        "Notion OAuth required fields",
+        "Notion OAuth redirect URIs localhost",
+        "Notion OAuth client ID client secret PKCE token lifetime refresh token",
+        "Notion public integration before approval limitations",
+        "Notion integration guidelines prerequisites"
+      ],
+      "grounded": [],
+      "urlsRead": [],
+      "model": "gemini-2.5-flash",
+      "mode": "search-only"
+    },
+    {
+      "facet": "review",
+      "queries": [
+        "Notion OAuth app approval process",
+        "Notion public integration review",
+        "Notion integration marketplace listing requirements",
+        "Notion API sensitive scopes review"
+      ],
+      "grounded": [
+        {
+          "title": "Authorization - Notion Docs - Notion API",
+          "url": "https://developers.notion.com/guides/get-started/authorization"
+        }
+      ],
+      "urlsRead": [
+        {
+          "url": "https://developers.notion.com/guides/get-started/authorization",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        }
+      ],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    },
+    {
+      "facet": "limits",
+      "queries": [
+        "Notion API scopes permissions",
+        "Notion API rate limits",
+        "Notion API pricing plans",
+        "Notion API changelog",
+        "Notion API data use policy AI",
+        "Notion API sandbox instances"
+      ],
+      "grounded": [
+        {
+          "title": "Authorization - Notion Docs - Notion API",
+          "url": "https://developers.notion.com/guides/get-started/authorization"
+        },
+        {
+          "title": "Notion API quickstart",
+          "url": "https://developers.notion.com"
+        }
+      ],
+      "urlsRead": [
+        {
+          "url": "https://developers.notion.com/guides/get-started/authorization",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        },
+        {
+          "url": "https://developers.notion.com",
+          "status": "URL_RETRIEVAL_STATUS_SUCCESS"
+        }
+      ],
+      "model": "gemini-2.5-flash",
+      "mode": "search+read"
+    }
+  ]
+}
